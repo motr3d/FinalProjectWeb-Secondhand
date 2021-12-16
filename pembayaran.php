@@ -8,7 +8,7 @@ include "header.php";
 ?>
 
 <style>
-
+/* bagian edit di halaman */
 .row-checkout {
   display: -ms-flexbox; /* IE10 */
   display: flex;
