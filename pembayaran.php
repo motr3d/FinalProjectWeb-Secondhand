@@ -120,7 +120,7 @@ span.price {
 					<div class="row-checkout">
 					
 					<div class="col-50">
-						<h3>Billing Address</h3>
+						<h3>Alamat Tagihan</h3>
 						<label for="fname">Full Name</label>
 						<input type="text" id="fname" class="form-control" name="firstname" pattern="^[a-zA-Z ]+$"  value="'.$row["nama_depan"].' '.$row["nama_belakang"].'">
 						<label for="email">Email</label>
