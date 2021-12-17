@@ -20,7 +20,7 @@ if(empty($f_name) || empty($l_name) || empty($email) || empty($password) || empt
 		
 		echo "
 			<div class='alert alert-warning'>
-				<a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a><b>PLease Fill all fields..!</b>
+				<a href='#' class='close' data-dismiss='alert' aria-label='close'></a><b>PLease Fill all fields..!</b>
 			</div>
 		";
 		exit();
@@ -28,8 +28,8 @@ if(empty($f_name) || empty($l_name) || empty($email) || empty($password) || empt
 		if(!preg_match($name,$f_name)){
 		echo "
 			<div class='alert alert-warning'>
-				<a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a>
-				<b>this $f_name is not valid..!</b>
+				<a href='#' class='close' data-dismiss='alert' aria-label='close'></a>
+				<b>$f_name Tidak Valid..!</b>
 			</div>
 		";
 		exit();
@@ -37,8 +37,8 @@ if(empty($f_name) || empty($l_name) || empty($email) || empty($password) || empt
 	if(!preg_match($name,$l_name)){
 		echo "
 			<div class='alert alert-warning'>
-				<a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a>
-				<b>this $l_name is not valid..!</b>
+				<a href='#' class='close' data-dismiss='alert' aria-label='close'></a>
+				<b>$l_name Ini Tidak Valid..!</b>
 			</div>
 		";
 		exit();
@@ -46,8 +46,8 @@ if(empty($f_name) || empty($l_name) || empty($email) || empty($password) || empt
 	if(!preg_match($emailValidation,$email)){
 		echo "
 			<div class='alert alert-warning'>
-				<a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a>
-				<b>this $email is not valid..!</b>
+				<a href='#' class='close' data-dismiss='alert' aria-label='close'></a>
+				<b>$email Ini Tidak Valid..!</b>
 			</div>
 		";
 		exit();
@@ -55,8 +55,8 @@ if(empty($f_name) || empty($l_name) || empty($email) || empty($password) || empt
 	if(strlen($password) < 9 ){
 		echo "
 			<div class='alert alert-warning'>
-				<a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a>
-				<b>Password is weak</b>
+				<a href='#' class='close' data-dismiss='alert' aria-label='close'></a>
+				<b>Password Lemah</b>
 			</div>
 		";
 		exit();
@@ -64,8 +64,8 @@ if(empty($f_name) || empty($l_name) || empty($email) || empty($password) || empt
 	if(strlen($repassword) < 9 ){
 		echo "
 			<div class='alert alert-warning'>
-				<a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a>
-				<b>Password is weak</b>
+				<a href='#' class='close' data-dismiss='alert' aria-label='close'></a>
+				<b>Password Lemah</b>
 			</div>
 		";
 		exit();
@@ -73,25 +73,25 @@ if(empty($f_name) || empty($l_name) || empty($email) || empty($password) || empt
 	if($password != $repassword){
 		echo "
 			<div class='alert alert-warning'>
-				<a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a>
-				<b>password is not same</b>
+				<a href='#' class='close' data-dismiss='alert' aria-label='close'></a>
+				<b>Password Tidak Sama</b>
 			</div>
 		";
 	}
 	if(!preg_match($number,$no_telp)){
 		echo "
 			<div class='alert alert-warning'>
-				<a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a>
-				<b>Mobile number $no_telp is not valid</b>
+				<a href='#' class='close' data-dismiss='alert' aria-label='close'></a>
+				<b>Nomer Telepon $no_telp is not valid</b>
 			</div>
 		";
 		exit();
 	}
-	if(!(strlen($no_telp) == 10)){
+	if(!(strlen($no_telp) == 12)){
 		echo "
 			<div class='alert alert-warning'>
-				<a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a>
-				<b>Mobile number must be 10 digit</b>
+				<a href='#' class='close' data-dismiss='alert' aria-label='close'></a>
+				<b>Nomer Telepon Harus 12</b>
 			</div>
 		";
 		exit();
@@ -103,8 +103,8 @@ if(empty($f_name) || empty($l_name) || empty($email) || empty($password) || empt
 	if($count_email > 0){
 		echo "
 			<div class='alert alert-danger'>
-				<a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a>
-				<b>Email Address is already available Try Another email address</b>
+				<a href='#' class='close' data-dismiss='alert' aria-label='close'></a>
+				<b>Email Sudah Terdaftar</b>
 			</div>
 		";
 		exit();

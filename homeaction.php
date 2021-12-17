@@ -53,57 +53,57 @@ if(isset($_POST["categoryhome"])){
 }
 
 
-if(isset($_POST["page"])){
-	$sql = "SELECT * FROM barang";
-	$run_query = mysqli_query($con,$sql);
-	$count = mysqli_num_rows($run_query);
-	$pageno = ceil($count/2);
-	for($i=1;$i<=$pageno;$i++){
-		echo "
-			<li><a href='#product-row' page='$i' id='page'>$i</a></li>
+// if(isset($_POST["page"])){
+// 	$sql = "SELECT * FROM barang";
+// 	$run_query = mysqli_query($con,$sql);
+// 	$count = mysqli_num_rows($run_query);
+// 	$pageno = ceil($count/2);
+// 	for($i=1;$i<=$pageno;$i++){
+// 		echo "
+// 			<li><a href='#product-row' page='$i' id='page'>$i</a></li>
             
             
-		";
-	}
-}
-if(isset($_POST["getProducthome"])){
-	$limit = 3;
-	if(isset($_POST["setPage"])){
-		$pageno = $_POST["pageNumber"];
-		$start = ($pageno * $limit) - $limit;
-	}else{
-		$start = 0;
-	}
-	$product_query = "SELECT * FROM barang,kategori WHERE kategori_barang=cat_id LIMIT $start,$limit";
-	$run_query = mysqli_query($con,$product_query);
-	if(mysqli_num_rows($run_query) > 0){
-		while($row = mysqli_fetch_array($run_query)){
-			$pro_id    = $row['id_barang'];
-			$pro_cat   = $row['kategori_barang'];
-			$pro_brand = $row['merek_barang'];
-			$pro_title = $row['nama_barang'];
-			$pro_price = $row['harga_barang'];
-			$pro_image = $row['gambar_barang'];
+// 		";
+// 	}
+// }
+// if(isset($_POST["getProducthome"])){
+// 	$limit = 3;
+// 	if(isset($_POST["setPage"])){
+// 		$pageno = $_POST["pageNumber"];
+// 		$start = ($pageno * $limit) - $limit;
+// 	}else{
+// 		$start = 0;
+// 	}
+// 	$product_query = "SELECT * FROM barang,kategori WHERE kategori_barang=cat_id LIMIT $start,$limit";
+// 	$run_query = mysqli_query($con,$product_query);
+// 	if(mysqli_num_rows($run_query) > 0){
+// 		while($row = mysqli_fetch_array($run_query)){
+// 			$pro_id    = $row['id_barang'];
+// 			$pro_cat   = $row['kategori_barang'];
+// 			$pro_brand = $row['merek_barang'];
+// 			$pro_title = $row['nama_barang'];
+// 			$pro_price = $row['harga_barang'];
+// 			$pro_image = $row['gambar_barang'];
             
-            $cat_name = $row["cat_title"];
-			echo "
+//             $cat_name = $row["cat_title"];
+// 			echo "
 				
-                       <div class='product-widget'>
-                                <a href='barang.php?p=$pro_id'> 
-									<div class='product-img'>
-										<img src='product_images/$pro_image' alt=''>
-									</div>
-									<div class='product-body'>
-										<p class='product-category'>$cat_name</p>
-										<h3 class='product-name'><a href='barang.php?p=$pro_id'>$pro_title</a></h3>
-										<h4 class='product-price'>$pro_price<del class='product-old-price'>$990.00</del></h4>
-									</div></a>
-								</div>
+//                        <div class='product-widget'>
+//                                 <a href='barang.php?p=$pro_id'> 
+// 									<div class='product-img'>
+// 										<img src='product_images/$pro_image' alt=''>
+// 									</div>
+// 									<div class='product-body'>
+// 										<p class='product-category'>$cat_name</p>
+// 										<h3 class='product-name'><a href='barang.php?p=$pro_id'>$pro_title</a></h3>
+// 										<h4 class='product-price'>$pro_price<del class='product-old-price'>$990.00</del></h4>
+// 									</div></a>
+// 								</div>
                         
-			";
-		}
-	}
-}
+// 			";
+// 		}
+// 	}
+// }
 
 
 if(isset($_POST["gethomeProduct"])){
