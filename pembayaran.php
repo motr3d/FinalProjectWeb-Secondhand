@@ -141,15 +141,6 @@ span.price {
 					
 					<div class="col-50">
 						<h3>Pembayaran</h3>
-						<label for="fname">Kartu Kredit</label>
-						<div class="icon-container">
-						<i class="fa fa-cc-visa" style="color:navy;"></i>
-						<i class="fa fa-cc-amex" style="color:blue;"></i>
-						<i class="fa fa-cc-mastercard" style="color:red;"></i>
-						<i class="fa fa-cc-discover" style="color:orange;"></i>
-						</div>
-						
-						
 						<label for="cname">Nama Pada Kartu</label>
 						<input type="text" id="cname" name="cardname" class="form-control" pattern="^[a-zA-Z ]+$" required>
 						
@@ -198,7 +189,7 @@ span.price {
 				<input type="hidden" name="total_count" value="'.$total_count.'">
 					<input type="hidden" name="total_price" value="'.$total.'">
 					
-					<input type="submit" id="submit" value="Lanjutkan untuk checkout" class="checkout-btn">
+					<input type="submit" id="submit" value="Lanjutkan Untuk Pembayaran" class="checkout-btn">
 				</form>
 				</div>
 			</div>
