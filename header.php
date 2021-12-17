@@ -11,7 +11,7 @@ session_start();
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		 <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-		<title>Online Shopping</title>
+		<title>Barang Bekas</title>
 
 		<!-- Google font -->
 		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
@@ -124,7 +124,7 @@ session_start();
 										</div>
 										
 										<div class="cart-btns">
-												<a href="keranjang.php" style="width:100%;"><i class="fa fa-edit"></i>  edit cart</a>
+												<a href="keranjang.php" style="width:100%;"><i class="fa fa-edit"></i>Edit Keranjang</a>
 											
 										</div>
 									</div>
@@ -145,8 +145,7 @@ session_start();
                                <div class="dropdownn">
                                   <a href="#" class="dropdownn" data-toggle="modal" data-target="#myModal" ><button type="button" class="btn btn-success"></i> Hi '.$row["nama_depan"].'</button></a>
                                   <div class="dropdownn-content">
-                                    <a href="" data-toggle="modal" data-target="#profile"><i class="fa fa-user-circle" ></i>My Profile</a>
-                                    <a href="logout.php"  ><i class="fa fa-sign-in" ></i>Log out</a>
+                                    <a href="logout.php">Log Out</a>
                                     
                                   </div>
                                 </div>';
@@ -197,7 +196,7 @@ session_start();
                           <!-- Modal content-->
                           <div class="modal-content">
                             <div class="modal-header">
-                              <button type="button" class="close" data-dismiss="modal">&times;</button>
+                              <button type="button" class="close" data-dismiss="modal"></button>
                               
                             </div>
                             <div class="modal-body">
@@ -218,7 +217,7 @@ session_start();
                           <!-- Modal content-->
                           <div class="modal-content">
                             <div class="modal-header">
-                              <button type="button" class="close" data-dismiss="modal">&times;</button>
+                              <button type="button" class="close" data-dismiss="modal"></button>
                               
                             </div>
                             <div class="modal-body">

@@ -235,8 +235,8 @@ if(isset($_POST["get_seleted_Category"]) || isset($_POST["selectBrand"]) || isse
 		if($count > 0){
 			echo "
 				<div class='alert alert-warning'>
-						<a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a>
-						<b>Product is already added into the cart Continue Shopping..!</b>
+						<a href='#' class='close' data-dismiss='alert' aria-label='close'></a>
+						<b>Barang Sudah Di Simpan..!</b>
 				</div>
 			";//not in video
 		} else {
@@ -246,8 +246,8 @@ if(isset($_POST["get_seleted_Category"]) || isset($_POST["selectBrand"]) || isse
 			if(mysqli_query($con,$sql)){
 				echo "
 					<div class='alert alert-success'>
-						<a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a>
-						<b>Product is Added..!</b>
+						<a href='#' class='close' data-dismiss='alert' aria-label='close'></a>
+						<b>Barnag Di Simpan..!</b>
 					</div>
 				";
 			}
@@ -258,8 +258,8 @@ if(isset($_POST["get_seleted_Category"]) || isset($_POST["selectBrand"]) || isse
 			if (mysqli_num_rows($query) > 0) {
 				echo "
 					<div class='alert alert-warning'>
-							<a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a>
-							<b>Product is already added into the cart Continue Shopping..!</b>
+							<a href='#' class='close' data-dismiss='alert' aria-label='close'></a>
+							<b>Barang Sudah Ada Di Keranjang, Lanjut..!</b>
 					</div>";
 					exit();
 			}
@@ -269,8 +269,8 @@ if(isset($_POST["get_seleted_Category"]) || isset($_POST["selectBrand"]) || isse
 			if (mysqli_query($con,$sql)) {
 				echo "
 					<div class='alert alert-success'>
-						<a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a>
-						<b>Your product is Added Successfully..!</b>
+						<a href='#' class='close' data-dismiss='alert' aria-label='close'></a>
+						<b>Barang Sudah Berhasil Di Terima..!</b>
 					</div>
 				";
 				exit();
@@ -502,8 +502,8 @@ if (isset($_POST["removeItemFromCart"])) {
 	}
 	if(mysqli_query($con,$sql)){
 		echo "<div class='alert alert-danger'>
-						<a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a>
-						<b>Product is removed from cart</b>
+						<a href='#' class='close' data-dismiss='alert' aria-label='close'></a>
+						<b>Barang Di Hapus Di Keranjang</b>
 				</div>";
 		exit();
 	}
@@ -521,8 +521,8 @@ if (isset($_POST["updateCartItem"])) {
 	}
 	if(mysqli_query($con,$sql)){
 		echo "<div class='alert alert-info'>
-						<a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a>
-						<b>Product is updated</b>
+						<a href='#' class='close' data-dismiss='alert' aria-label='close'></a>
+						<b>Barang Sudah Terupdate</b>
 				</div>";
 		exit();
 	}

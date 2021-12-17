@@ -20,7 +20,7 @@ if(empty($f_name) || empty($l_name) || empty($email) || empty($password) || empt
 		
 		echo "
 			<div class='alert alert-warning'>
-				<a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a><b>PLease Fill all fields..!</b>
+				<a href='#' class='close' data-dismiss='alert' aria-label='close'></a><b>PLease Fill all fields..!</b>
 			</div>
 		";
 		exit();
@@ -28,7 +28,7 @@ if(empty($f_name) || empty($l_name) || empty($email) || empty($password) || empt
 		if(!preg_match($name,$f_name)){
 		echo "
 			<div class='alert alert-warning'>
-				<a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a>
+				<a href='#' class='close' data-dismiss='alert' aria-label='close'></a>
 				<b>$f_name Tidak Valid..!</b>
 			</div>
 		";
@@ -37,7 +37,7 @@ if(empty($f_name) || empty($l_name) || empty($email) || empty($password) || empt
 	if(!preg_match($name,$l_name)){
 		echo "
 			<div class='alert alert-warning'>
-				<a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a>
+				<a href='#' class='close' data-dismiss='alert' aria-label='close'></a>
 				<b>$l_name Ini Tidak Valid..!</b>
 			</div>
 		";
@@ -46,7 +46,7 @@ if(empty($f_name) || empty($l_name) || empty($email) || empty($password) || empt
 	if(!preg_match($emailValidation,$email)){
 		echo "
 			<div class='alert alert-warning'>
-				<a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a>
+				<a href='#' class='close' data-dismiss='alert' aria-label='close'></a>
 				<b>$email Ini Tidak Valid..!</b>
 			</div>
 		";
@@ -55,7 +55,7 @@ if(empty($f_name) || empty($l_name) || empty($email) || empty($password) || empt
 	if(strlen($password) < 9 ){
 		echo "
 			<div class='alert alert-warning'>
-				<a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a>
+				<a href='#' class='close' data-dismiss='alert' aria-label='close'></a>
 				<b>Password Lemah</b>
 			</div>
 		";
@@ -64,7 +64,7 @@ if(empty($f_name) || empty($l_name) || empty($email) || empty($password) || empt
 	if(strlen($repassword) < 9 ){
 		echo "
 			<div class='alert alert-warning'>
-				<a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a>
+				<a href='#' class='close' data-dismiss='alert' aria-label='close'></a>
 				<b>Password Lemah</b>
 			</div>
 		";
@@ -73,7 +73,7 @@ if(empty($f_name) || empty($l_name) || empty($email) || empty($password) || empt
 	if($password != $repassword){
 		echo "
 			<div class='alert alert-warning'>
-				<a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a>
+				<a href='#' class='close' data-dismiss='alert' aria-label='close'></a>
 				<b>Password Tidak Sama</b>
 			</div>
 		";
@@ -81,7 +81,7 @@ if(empty($f_name) || empty($l_name) || empty($email) || empty($password) || empt
 	if(!preg_match($number,$no_telp)){
 		echo "
 			<div class='alert alert-warning'>
-				<a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a>
+				<a href='#' class='close' data-dismiss='alert' aria-label='close'></a>
 				<b>Nomer Telepon $no_telp is not valid</b>
 			</div>
 		";
@@ -90,7 +90,7 @@ if(empty($f_name) || empty($l_name) || empty($email) || empty($password) || empt
 	if(!(strlen($no_telp) == 12)){
 		echo "
 			<div class='alert alert-warning'>
-				<a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a>
+				<a href='#' class='close' data-dismiss='alert' aria-label='close'></a>
 				<b>Nomer Telepon Harus 12</b>
 			</div>
 		";
@@ -103,7 +103,7 @@ if(empty($f_name) || empty($l_name) || empty($email) || empty($password) || empt
 	if($count_email > 0){
 		echo "
 			<div class='alert alert-danger'>
-				<a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a>
+				<a href='#' class='close' data-dismiss='alert' aria-label='close'></a>
 				<b>Email Sudah Terdaftar</b>
 			</div>
 		";

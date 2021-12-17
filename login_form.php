@@ -21,10 +21,6 @@ if (isset($_POST["login_user_with_barang"])) {
 				
 
 					<div class="login-marg">
-						<!-- Billing Details -->
-						
-						
-						<!-- /Billing Details -->
 						
 						
 								<form onsubmit="return false" id="login" class="login100-form ">
@@ -52,19 +48,5 @@ if (isset($_POST["login_user_with_barang"])) {
                                 	</div>
                                 
 								</form>
-                           
-						<!-- Shiping Details -->
-						
-						<!-- /Shiping Details -->
-
-						<!-- Order notes -->
-						
-						<!-- /Order notes -->
 					</div>
-
-					<!-- Order Details -->
-					
-					<!-- /Order Details -->
-				
-				<!-- /row -->
 			</div>

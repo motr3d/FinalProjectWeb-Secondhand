@@ -48,7 +48,7 @@
                                     
                                     
                                     <div>
-                                       <input class="btn btn-secondary"  value="Sign Up" type="submit" name="signup_button">
+                                       <input class="primary-btn btn-block"  value="Sign Up" type="submit" name="signup_button">
                                     </div>
                                        
                                     </div>

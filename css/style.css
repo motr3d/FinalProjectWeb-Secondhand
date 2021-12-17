@@ -412,7 +412,7 @@ textarea.input {
 #top-header {
   padding-top: 10px;
   padding-bottom: 10px;
-  background-color: #1E1F29;
+  background-color: #dcdde9;
 }
 
 .header-links li {
@@ -2349,12 +2349,16 @@ background: linear-gradient(to bottom, #E2E2E2, #C9D6FF); /* W3C, IE 10+/ Edge, 
 
 .btn-secondary{
   padding: 14px 180px;
-  background: #ffec00;
+  background: #007bff;
   border-radius: 12px;
 }
 
-.container-fluid, .login- .login-marg{
+.container-fluid, .login-marg{
   background-color: #007bff;
+}
+
+.dropdownn-content{
+  background: #007bff;
 }
 
 

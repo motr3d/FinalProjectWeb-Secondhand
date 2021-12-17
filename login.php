@@ -49,7 +49,7 @@ if(isset($_POST["email"]) && isset($_POST["password"])){
 				exit();
 				
 			}
-			//if user is login from page we will send login_success
+			//if user is login from page we will send login_success /2021
 			echo "login_success";
 			$BackToMyPage = $_SERVER['HTTP_REFERER'];
 				if(!isset($BackToMyPage)) {
