@@ -138,8 +138,8 @@ include "header.php";
 								<a class="review-link" href="#review-form">10 Review(s) | Add your review</a>
 							</div>
 							<div>
-								<h3 class="product-price">$'.$row['harga_barang'].'<del class="product-old-price">$990.00</del></h3>
-								<span class="product-available">In Stock</span>
+								<h3 class="product-price">Rp.'.$row['harga_barang'].'<del class="product-old-price">Rp.2000000</del></h3>
+								<span class="product-available">Stok Tersedia</span>
 							</div>
 							<p>'.$row['deskripsi_barang'].'</p>
 

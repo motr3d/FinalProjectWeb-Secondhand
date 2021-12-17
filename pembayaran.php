@@ -120,14 +120,14 @@ span.price {
 					<div class="row-checkout">
 					
 					<div class="col-50">
-						<h3>Billing Address</h3>
-						<label for="fname">Full Name</label>
+						<h3>Alamat Tagihan</h3>
+						<label for="fname">Nama Lengkap</label>
 						<input type="text" id="fname" class="form-control" name="firstname" pattern="^[a-zA-Z ]+$"  value="'.$row["nama_depan"].' '.$row["nama_belakang"].'">
 						<label for="email">Email</label>
 						<input type="text" id="email" name="email" class="form-control" pattern="^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9]+(\.[a-z]{2,4})$" value="'.$row["email"].'" required>
-						<label for="adr">Address</label>
+						<label for="adr">Alamat</label>
 						<input type="text" id="adr" name="address" class="form-control" value="'.$row["alamat"].'" required>
-						<label for="city">City</label>
+						<label for="city">Kota</label>
 						<input type="text" id="city" name="city" class="form-control" value="'.$row["kota"].'" pattern="^[a-zA-Z ]+$" required>
 
 						<div class="row">
@@ -140,8 +140,8 @@ span.price {
 					
 					
 					<div class="col-50">
-						<h3>Payment</h3>
-						<label for="fname">Accepted Cards</label>
+						<h3>Pembayaran</h3>
+						<label for="fname">Kartu Kredit</label>
 						<div class="icon-container">
 						<i class="fa fa-cc-visa" style="color:navy;"></i>
 						<i class="fa fa-cc-amex" style="color:blue;"></i>
@@ -150,14 +150,14 @@ span.price {
 						</div>
 						
 						
-						<label for="cname">Name on Card</label>
+						<label for="cname">Nama Pada Kartu</label>
 						<input type="text" id="cname" name="cardname" class="form-control" pattern="^[a-zA-Z ]+$" required>
 						
 						<div class="form-group" id="card-number-field">
-                        <label for="cardNumber">Card Number</label>
+                        <label for="cardNumber">Nomor Kartu Kredit</label>
                         <input type="text" class="form-control" id="cardNumber" name="cardNumber" required>
                     </div>
-						<label for="expdate">Exp Date</label>
+						<label for="expdate">Berlaku Hingga</label>
 						<input type="text" id="expdate" name="expdate" class="form-control" pattern="^((0[1-9])|(1[0-2]))\/(\d{2})$" placeholder="12/22"required>
 						
 
@@ -172,7 +172,7 @@ span.price {
 					</div>
 					</div>
 					</div>
-					<label><input type="CHECKBOX" name="q" class="roomselect" value="conform" required> Shipping address same as billing
+					<label><input type="CHECKBOX" name="q" class="roomselect" value="conform" required> Alamat pengiriman sama dengan penagihan
 					</label>';
 					$i=1;
 					$total=0;
@@ -198,7 +198,7 @@ span.price {
 				<input type="hidden" name="total_count" value="'.$total_count.'">
 					<input type="hidden" name="total_price" value="'.$total.'">
 					
-					<input type="submit" id="submit" value="Continue to checkout" class="checkout-btn">
+					<input type="submit" id="submit" value="Lanjutkan untuk checkout" class="checkout-btn">
 				</form>
 				</div>
 			</div>
@@ -220,7 +220,7 @@ span.price {
 					$i=1;
 					echo
 					"
-					<h4>Cart 
+					<h4>Keranjang 
 					<span class='price' style='color:black'>
 					<i class='fa fa-shopping-cart'></i> 
 					<b>$total_count</b>
@@ -229,10 +229,10 @@ span.price {
 
 					<table class='table table-condensed'>
 					<thead><tr>
-					<th >no</th>
-					<th >barang title</th>
-					<th >	kapasitas	</th>
-					<th >	amount</th></tr>
+					<th >No</th>
+					<th >Nama Barang</th>
+					<th >	Jumlah	</th>
+					<th >	Harga</th></tr>
 					</thead>
 					<tbody>
 					";
@@ -264,7 +264,7 @@ span.price {
 				</table>
 				<hr>
 				
-				<h3>total<span class='price' style='color:black'><b>$$total</b></span></h3>";
+				<h3>Total<span class='price' style='color:black'><b>Rp.$total</b></span></h3>";
 					
 				}
 				?>

@@ -57,13 +57,13 @@
 					<!-- section title -->
 					<div class="col-md-12">
 						<div class="section-title">
-							<h3 class="title">New Products</h3>
+							<h3 class="title">Produk Terbaru</h3>
 							<div class="section-nav">
 								<ul class="section-tab-nav tab-nav">
-									<li class="active"><a data-toggle="tab" href="#tab1">Laptops</a></li>
-									<li><a data-toggle="tab" href="#tab1">Smartphones</a></li>
-									<li><a data-toggle="tab" href="#tab1">Cameras</a></li>
-									<li><a data-toggle="tab" href="#tab1">Accessories</a></li>
+									<li class="active"><a data-toggle="tab" href="#tab1">Laptop</a></li>
+									<li><a data-toggle="tab" href="#tab1">Gadget</a></li>
+									<li><a data-toggle="tab" href="#tab1">Kamera</a></li>
+									<li><a data-toggle="tab" href="#tab1">Aksesoris</a></li>
 								</ul>
 							</div>
 						</div>
@@ -215,13 +215,13 @@
 					<!-- section title -->
 					<div class="col-md-12">
 						<div class="section-title">
-							<h3 class="title">Top selling</h3>
+							<h3 class="title">Terlaris</h3>
 							<div class="section-nav">
 								<ul class="section-tab-nav tab-nav">
-									<li class="active"><a data-toggle="tab" href="#tab2">Formals</a></li>
-									<li><a data-toggle="tab" href="#tab2">Shirts</a></li>
-									<li><a data-toggle="tab" href="#tab2">T-Shirts</a></li>
-									<li><a data-toggle="tab" href="#tab2">Pants</a></li>
+									<li class="active"><a data-toggle="tab" href="#tab2">Formal</a></li>
+									<li><a data-toggle="tab" href="#tab2">Kemeja</a></li>
+									<li><a data-toggle="tab" href="#tab2">Kaos</a></li>
+									<li><a data-toggle="tab" href="#tab2">Celana</a></li>
 								</ul>
 							</div>
 						</div>
@@ -321,7 +321,7 @@
 				<div class="row">
 					<div class="col-md-4 col-xs-6">
 						<div class="section-title">
-							<h4 class="title">Top selling</h4>
+							<h4 class="title">Terbaik</h4>
 							<div class="section-nav">
 								<div id="slick-nav-3" class="products-slick-nav"></div>
 							</div>
@@ -380,7 +380,7 @@
 
 					<div class="col-md-4 col-xs-6">
 						<div class="section-title">
-							<h4 class="title">Top selling</h4>
+							<h4 class="title">Terlaris</h4>
 							<div class="section-nav">
 								<div id="slick-nav-4" class="products-slick-nav"></div>
 							</div>
@@ -477,7 +477,7 @@
 
 					<div class="col-md-4 col-xs-6">
 						<div class="section-title">
-							<h4 class="title">Top selling</h4>
+							<h4 class="title">Terbaru</h4>
 							<div class="section-nav">
 								<div id="slick-nav-5" class="products-slick-nav"></div>
 							</div>
@@ -561,7 +561,7 @@
 									<div class="product-body">
 										<p class="product-category">Category</p>
 										<h3 class="product-name"><a href="#">product name goes here</a></h3>
-										<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
+										<h4 class="product-price">Rp.1000000 <del class="product-old-price">Rp.1500000</del></h4>
 									</div>
 								</div>
 								<!-- product widget -->

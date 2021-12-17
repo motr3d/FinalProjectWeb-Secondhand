@@ -11,8 +11,5 @@ checkout_process.php berada pada checkout.php
 cookie list_barang berada pada login_form, login
 (pembayaran_success.php)
 
-user login muncul halaman 2021 berada pada login.php
 
-Homeaction di apa saja
-price filter(Berada pada shop.php)
 

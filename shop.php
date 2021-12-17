@@ -51,7 +51,6 @@ include 'header.php';
 						<!-- /aside Widget -->
 
 						<!-- aside Widget -->
-						
 						<!-- /aside Widget -->
 
 						<!-- aside Widget -->
