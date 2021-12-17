@@ -7,8 +7,8 @@
 					<div class="row">
 						<div class="col-md-3 col-xs-6">
 							<div class="footer">
-								<h3 class="footer-title">About Us</h3>
-								<p>This is my Small Database Management System mini project</p>
+								<h3 class="footer-title">Tentang Kami</h3>
+								<p>Secondhand adalah pusat jual beli barang bekas terpercaya di Indonesia</p>
 								<ul class="footer-links">
 									<li><a href="#"><i class="fa fa-map-marker"></i>Yogyakarta</a></li>
 									<li><a href="#"><i class="fa fa-phone"></i>12321212234</a></li>
