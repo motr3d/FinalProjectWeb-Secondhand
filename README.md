@@ -13,4 +13,6 @@ cookie list_barang berada pada login_form, login
 
 user login muncul halaman 2021 berada pada login.php
 
+Homeaction di apa saja
+price filter(Berada pada shop.php)
 

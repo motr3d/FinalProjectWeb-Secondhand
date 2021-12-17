@@ -9,7 +9,10 @@ if(isset($_GET['action']) && $_GET['action']!="" && $_GET['action']=='delete')
 $id_pesanan=$_GET['id_pesanan'];
 
 /*this is delet query*/
-mysqli_query($con,"delete from  data_pesanan where id_pesanan='$id_pesanan'")or header("location: barangpesanan.php");
+// mysqli_query($con,"delete from barang_pesanan where id_pesanan='$id_pesanan'")or die("delete query is incorrect...");
+// mysqli_query($con,"delete from data_pesanan where id_pesanan='$id_pesanan'")or die("delete query is incorrect...");
+mysqli_query($con,"delete barang_pesanan.*, data_pesanan.* from barang_pesanan inner join data_pesanan on barang_pesanan.id_pesanan=data_pesanan.id_pesanan where barang_pesanan.id_pesanan='$id_pesanan'");
+// mysqli_query($conn, "DELETE $table1, $table2 FROM $table1 INNER JOIN $table2 ON $table1.id_profile=$table2.id_profile WHERE $table1.id_profile = $id");
 
 } 
 
