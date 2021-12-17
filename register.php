@@ -29,7 +29,7 @@ if(empty($f_name) || empty($l_name) || empty($email) || empty($password) || empt
 		echo "
 			<div class='alert alert-warning'>
 				<a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a>
-				<b>this $f_name is not valid..!</b>
+				<b>$f_name Tidak Valid..!</b>
 			</div>
 		";
 		exit();
@@ -38,7 +38,7 @@ if(empty($f_name) || empty($l_name) || empty($email) || empty($password) || empt
 		echo "
 			<div class='alert alert-warning'>
 				<a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a>
-				<b>this $l_name is not valid..!</b>
+				<b>$l_name Ini Tidak Valid..!</b>
 			</div>
 		";
 		exit();
@@ -47,7 +47,7 @@ if(empty($f_name) || empty($l_name) || empty($email) || empty($password) || empt
 		echo "
 			<div class='alert alert-warning'>
 				<a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a>
-				<b>this $email is not valid..!</b>
+				<b>$email Ini Tidak Valid..!</b>
 			</div>
 		";
 		exit();
@@ -56,7 +56,7 @@ if(empty($f_name) || empty($l_name) || empty($email) || empty($password) || empt
 		echo "
 			<div class='alert alert-warning'>
 				<a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a>
-				<b>Password is weak</b>
+				<b>Password Lemah</b>
 			</div>
 		";
 		exit();
@@ -65,7 +65,7 @@ if(empty($f_name) || empty($l_name) || empty($email) || empty($password) || empt
 		echo "
 			<div class='alert alert-warning'>
 				<a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a>
-				<b>Password is weak</b>
+				<b>Password Lemah</b>
 			</div>
 		";
 		exit();
@@ -74,7 +74,7 @@ if(empty($f_name) || empty($l_name) || empty($email) || empty($password) || empt
 		echo "
 			<div class='alert alert-warning'>
 				<a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a>
-				<b>password is not same</b>
+				<b>Password Tidak Sama</b>
 			</div>
 		";
 	}
@@ -82,16 +82,16 @@ if(empty($f_name) || empty($l_name) || empty($email) || empty($password) || empt
 		echo "
 			<div class='alert alert-warning'>
 				<a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a>
-				<b>Mobile number $no_telp is not valid</b>
+				<b>Nomer Telepon $no_telp is not valid</b>
 			</div>
 		";
 		exit();
 	}
-	if(!(strlen($no_telp) == 10)){
+	if(!(strlen($no_telp) == 12)){
 		echo "
 			<div class='alert alert-warning'>
 				<a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a>
-				<b>Mobile number must be 10 digit</b>
+				<b>Nomer Telepon Harus 12</b>
 			</div>
 		";
 		exit();
@@ -104,7 +104,7 @@ if(empty($f_name) || empty($l_name) || empty($email) || empty($password) || empt
 		echo "
 			<div class='alert alert-danger'>
 				<a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a>
-				<b>Email Address is already available Try Another email address</b>
+				<b>Email Sudah Terdaftar</b>
 			</div>
 		";
 		exit();

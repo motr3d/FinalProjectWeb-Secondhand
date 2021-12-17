@@ -3,7 +3,7 @@
     </div>
     <style>
     .input-borders{
-        border-radius:30px;
+        border-radius:40px;
     }
     </style>
 				<!-- row -->
@@ -17,7 +17,7 @@
 								<form id="signup_form" onsubmit="return false" class="login100-form">
 									<div class="billing-details jumbotron">
                                     <div class="section-title">
-                                        <h2 class="login100-form-title p-b-49" >Register Here</h2>
+                                        <h2 class="login100-form-title p-b-49" >Mendaftar Disini</h2>
                                     </div>
                                     <div class="form-group ">
                                     
@@ -31,10 +31,10 @@
                                         <input class="input form-control input-borders" type="email" name="email"  placeholder="Email">
                                     </div>
                                     <div class="form-group">
-                                        <input class="input form-control input-borders" type="password" name="password" id="password" placeholder="password">
+                                        <input class="input form-control input-borders" type="password" name="password" id="password" placeholder="Password">
                                     </div>
                                     <div class="form-group">
-                                        <input class="input form-control input-borders" type="password" name="repassword" id="repassword" placeholder="confirm password">
+                                        <input class="input form-control input-borders" type="password" name="repassword" id="repassword" placeholder="Ketik Ulang Password">
                                     </div>
                                     <div class="form-group">
                                         <input class="input form-control input-borders" type="text" name="no_telp" id="no_telp" placeholder="Nomer Telpon">
@@ -48,7 +48,7 @@
                                     
                                     
                                     <div>
-                                       <input class="primary-btn btn-block"  value="Sign Up" type="submit" name="signup_button">
+                                       <input class="btn btn-secondary"  value="Sign Up" type="submit" name="signup_button">
                                     </div>
                                        
                                     </div>

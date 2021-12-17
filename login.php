@@ -87,7 +87,7 @@ if(isset($_POST["email"]) && isset($_POST["password"])){
                     exit;
 
                 }else{
-                    echo "<span style='color:red;'>Your password is wrong, or your username is not registered..!</span>";
+                    echo "<span style='color:red;'>Password Salah, Atau Belum Teregister..!</span>";
                     exit();
                 }
     
