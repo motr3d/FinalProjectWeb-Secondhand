@@ -11,8 +11,8 @@
 								<p>Secondhand adalah pusat jual beli barang bekas terpercaya di Indonesia</p>
 								<ul class="footer-links">
 									<li><a href="#"><i class="fa fa-map-marker"></i>Yogyakarta</a></li>
-									<li><a href="#"><i class="fa fa-phone"></i>12321212234</a></li>
-									<li><a href="#"><i class="fa fa-envelope-o"></i>tsuki_Futatsu@gmail.com</a></li>
+									<li><a href="#"><i class="fa fa-phone"></i>0888-3242-6534</a></li>
+									<li><a href="#"><i class="fa fa-envelope-o"></i>secondhand@gmail.com</a></li>
 								</ul>
 							</div>
 						</div>
@@ -27,7 +27,7 @@
 							</ul>
 							<span class="copyright">
 								<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-								Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="#" target="_blank">Dontknow</a>
+								Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Organized by<i class="fa fa-heart-o" aria-hidden="true"></i><a href="#" target="_blank">Secondhand</a>
 							<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 							</span>
 						</div>
@@ -36,11 +36,11 @@
 							<div class="footer">
 								<h3 class="footer-title">Kategori</h3>
 								<ul class="footer-links">
-									<li><a href="#">A</a></li>
-									<li><a href="#">B</a></li>
-									<li><a href="#">C</a></li>
-									<li><a href="#">D</a></li>
-									<li><a href="#">E</a></li>
+									<li><a href="#">Pakaian Wanita</a></li>
+									<li><a href="#">Pakaian Pria</a></li>
+									<li><a href="#">Pakaian Anak</a></li>
+									<li><a href="#">Alat Rumah Tangga</a></li>
+									<li><a href="#">Barang Elektronik</a></li>
 								</ul>
 							</div>
 						</div>
