@@ -11,7 +11,7 @@ session_start();
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		 <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-		<title>Barang Bekas</title>
+		<title>SecondHand</title>
 
 		<!-- Google font -->
 		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
@@ -37,14 +37,15 @@ session_start();
     <style>
         #header {
   
-            background: #007bff;
-            background-color: #007bff;
+            background:#ebf2f2;
+            background-color:#ebf2f2;
   
         }
         #footer {
-			background: #007bff;
-            background-color: #007bff;
+			background:#ebf2f2;
+            background-color:#ebf2f2;
         }
+
         .footer-links li a {
           color: #1E1F29;
         }
@@ -70,13 +71,11 @@ session_start();
     .glyphicon-chevron-right:before{
         content:"\f054"
     }
-        
-
-       
-        
         </style>
 
     </head>
+
+	
 	<body>
 
 			<!-- MAIN HEADER -->
@@ -89,8 +88,8 @@ session_start();
 						<div class="col-md-3">
 							<div class="header-logo">
 								<a href="#" class="logo">
-								<font style="font-style:normal; font-size: 33px;color: aliceblue;font-family: serif">
-                                        Barang Bekas
+								<font style="font-style:normal; font-size: 33px;color: black;font-family: serif">
+                                        SecondHand
                                     </font>
 									
 								</a>
