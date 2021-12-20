@@ -348,10 +348,10 @@ if (isset($_POST["Common"])) {
 	               <table id="cart" class="table table-hover table-condensed" id="">
     				<thead>
 						<tr>
-							<th style="width:50%">Product</th>
-							<th style="width:10%">Price</th>
-							<th style="width:8%">Quantity</th>
-							<th style="width:7%" class="text-center">Subtotal</th>
+							<th style="width:50%">Produk</th>
+							<th style="width:10%">Harga</th>
+							<th style="width:8%">Kapasitas</th>
+							<th style="width:7%" class="text-center">Harga Total</th>
 							<th style="width:10%"></th>
 						</tr>
 					</thead>
@@ -409,7 +409,7 @@ if (isset($_POST["Common"])) {
 				<tfoot>
 					
 					<tr>
-						<td><a href="shop.php" class="btn btn-warning"><i class="fa fa-angle-left"></i> Continue Shopping</a></td>
+						<td><a href="shop.php" class="btn btn-warning"><i class="fa fa-angle-left"></i>Lanjut Belanjga</a></td>
 						<td colspan="2" class="hidden-xs"></td>
 						<td class="hidden-xs text-center"><b class="net_total" ></b></td>
 						<div id="issessionset"></div>
@@ -419,7 +419,7 @@ if (isset($_POST["Common"])) {
 				if (!isset($_SESSION["uid"])) {
 					echo '
 					
-							<a href="" data-toggle="modal" data-target="#Modal_register" class="btn btn-success">Ready to Checkout</a></td>
+							<a href="" data-toggle="modal" data-target="#Modal_register" class="btn btn-success">Lanjut Ke Pembayaran</a></td>
 								</tr>
 							</tfoot>
 				
