@@ -102,7 +102,7 @@ include "topheader.php";
                     </div>
                     <div class="col-md-12">
                       <div class="form-group">
-                        <label>Product Keywords</label>
+                        <label>Produk Keywords</label>
                         <input type="text" id="tags" name="tags" required class="form-control" >
                       </div>
                     </div>
