@@ -36,11 +36,11 @@
 							<div class="footer">
 								<h3 class="footer-title">Kategori</h3>
 								<ul class="footer-links">
-									<li><a href="#">Pakaian Wanita</a></li>
-									<li><a href="#">Pakaian Pria</a></li>
-									<li><a href="#">Pakaian Anak</a></li>
-									<li><a href="#">Alat Rumah Tangga</a></li>
-									<li><a href="#">Barang Elektronik</a></li>
+									<li><a href="#">A</a></li>
+									<li><a href="#">B</a></li>
+									<li><a href="#">C</a></li>
+									<li><a href="#">D</a></li>
+									<li><a href="#">E</a></li>
 								</ul>
 							</div>
 						</div>

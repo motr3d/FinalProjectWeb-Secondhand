@@ -88,7 +88,7 @@ include "topheader.php";
           <div class="col-md-5">
             <div class="card">
               <div class="card-header card-header-primary">
-                <h5 class="title">Categories</h5>
+                <h5 class="title">Kategori</h5>
               </div>
               <div class="card-body">
                 
@@ -96,18 +96,10 @@ include "topheader.php";
                     
                     <div class="col-md-12">
                       <div class="form-group">
-                        <label>Product Category</label>
+                        <label>Kategori Produk</label>
                         <input type="number" id="product_type" name="product_type" required="[1-6]" class="form-control">
                       </div>
                     </div>
-                    <div class="col-md-12">
-                      <div class="form-group">
-                        <label for="">Product Brand</label>
-                        <input type="number" id="brand" name="brand" required class="form-control">
-                      </div>
-                    </div>
-                     
-                  
                     <div class="col-md-12">
                       <div class="form-group">
                         <label>Product Keywords</label>
