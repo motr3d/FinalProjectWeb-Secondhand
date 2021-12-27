@@ -12,17 +12,6 @@ cookie list_barang berada pada login_form, login
 (pembayaran_success.php)
 
 Ketika login muncul 2021 berada pada login.php 
-	echo "login_success";
-			$BackToMyPage = $_SERVER['HTTP_REFERER'];
-				if(!isset($BackToMyPage)) {
-					header('Location: '.$BackToMyPage);
-					echo"<script type='text/javascript'>
-					
-					</script>";
-				} else {
-					header('Location: index.php'); // default page
-				} 
-				
 
 
 
