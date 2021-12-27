@@ -80,15 +80,15 @@ include "header.php";
                                     </div>
 
                                     <div class="product-preview">
-                                        <img src="product_images/'.$row['gambar_barang'].'" alt="">
+                                        <img src="product_images/'.$row['gambar_barang2'].'" alt="">
                                     </div>
 
                                     <div class="product-preview">
-                                        <img src="product_images/'.$row['gambar_barang'].'" alt="">
+                                        <img src="product_images/'.$row['gambar_barang3'].'" alt="">
                                     </div>
 
                                     <div class="product-preview">
-                                        <img src="product_images/'.$row['gambar_barang'].'" alt="">
+                                        <img src="product_images/'.$row['gambar_barang4'].'" alt="">
                                     </div>
                                 </div>
                             </div>
@@ -100,15 +100,15 @@ include "header.php";
                                     </div>
 
                                     <div class="product-preview">
-                                        <img src="product_images/'.$row['gambar_barang'].'" alt="">
+                                        <img src="product_images/'.$row['gambar_barang2'].'" alt="">
                                     </div>
 
                                     <div class="product-preview">
-                                        <img src="product_images/'.$row['gambar_barang'].'g" alt="">
+                                        <img src="product_images/'.$row['gambar_barang3'].'g" alt="">
                                     </div>
 
                                     <div class="product-preview">
-                                        <img src="product_images/'.$row['gambar_barang'].'" alt="">
+                                        <img src="product_images/'.$row['gambar_barang4'].'" alt="">
                                     </div>
                                 </div>
                             </div>
@@ -128,11 +128,18 @@ include "header.php";
 						<div class="product-details">
 							<h2 class="product-name">'.$row['nama_barang'].'</h2>
 							<div>
+								<div class="product-rating">
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star-o"></i>
+								</div>
 								<a class="review-link" href="#review-form">10 Review(s) | Add your review</a>
 							</div>
 							<div>
-								<h3 class="product-price">Rp.'.$row['harga_barang'].'</h3>
-								<span class="product-available">Stok Tersedia</span>
+								<h3 class="product-price">Rp '.$row['harga_barang' ].'</h3>
+								<span class="product-available">In Stock</span>
 							</div>
 							<p>'.$row['deskripsi_barang'].'</p>
 
@@ -144,9 +151,10 @@ include "header.php";
 									</select>
 								</label>
 								<label>
-									Color
+									Warna
 									<select class="input-select">
-										<option value="0">Red</option>
+										<option value="0">Gray</option>
+										<option value="1">Hitam</option>
 									</select>
 								</label>
 							</div>
@@ -207,7 +215,7 @@ include "header.php";
 						<div id="product-tab">
 							<!-- product tab nav -->
 							<ul class="tab-nav">
-								<li class="active"><a data-toggle="tab" href="#tab1">Description</a></li>
+								<li class="active"><a data-toggle="tab" href="#tab1">Deskripsi</a></li>
 								<li><a data-toggle="tab" href="#tab2">Details</a></li>
 								<li><a data-toggle="tab" href="#tab3">Reviews (3)</a></li>
 							</ul>
@@ -466,16 +474,23 @@ include "header.php";
 								<a href='barang.php?p=$pro_id'><div class='product'>
 									<div class='product-img'>
 										<img src='product_images/$pro_image' style='max-height: 170px;' alt=''>
+										<div class='product-label'>
+
+										</div>
 									</div></a>
 									<div class='product-body'>
 										<p class='product-category'>$cat_name</p>
 										<h3 class='product-name header-cart-item-name'><a href='barang.php?p=$pro_id'>$pro_title</a></h3>
-										<h4 class='product-price header-cart-item-info'>$pro_price</h4>
-										<div class='product-btns'>
-											<button class='add-to-wishlist'><i class='fa fa-heart-o'></i><span class='tooltipp'>add to wishlist</span></button>
-											<button class='add-to-compare'><i class='fa fa-exchange'></i><span class='tooltipp'>add to compare</span></button>
-											<button class='quick-view'><i class='fa fa-eye'></i><span class='tooltipp'>quick view</span></button>
+										
+										<h4 class='product-price header-cart-item-info'>Rp $pro_price</h4>
+										<div class='product-rating'>
+											<i class='fa fa-star'></i>
+											<i class='fa fa-star'></i>
+											<i class='fa fa-star'></i>
+											<i class='fa fa-star'></i>
+											<i class='fa fa-star'></i>
 										</div>
+										
 									</div>
 									<div class='add-to-cart'>
 										<button pid='$pro_id' id='product' class='add-to-cart-btn block2-btn-towishlist' href='#'><i class='fa fa-shopping-cart'></i>Keranjang</button>
