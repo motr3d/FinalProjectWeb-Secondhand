@@ -126,8 +126,6 @@ if(isset($_POST["getProduct"])){
 										<h3 class='product-name header-cart-item-name'><a href='barang.php?p=$pro_id'>$pro_title</a></h3>
 										<h4 class='product-price header-cart-item-info'>$pro_price</h4>
 										<div class='product-btns'>
-											<button class='add-to-wishlist'><i class='fa fa-heart-o'></i><span class='tooltipp'>add to wishlist</span></button>
-											<button class='add-to-compare'><i class='fa fa-exchange'></i><span class='tooltipp'>add to compare</span></button>
 											<button class='quick-view'><i class='fa fa-eye'></i><span class='tooltipp'>quick view</span></button>
 										</div>
 									</div>
@@ -181,8 +179,6 @@ if(isset($_POST["get_seleted_Category"]) || isset($_POST["selectBrand"]) || isse
 										<h3 class='product-name header-cart-item-name'><a href='barang.php?p=$pro_id'>$pro_title</a></h3>
 										<h4 class='product-price header-cart-item-info'>$pro_price</h4>
 										<div class='product-btns'>
-											<button class='add-to-wishlist' tabindex='0'><i class='fa fa-heart-o'></i><span class='tooltipp'>add to wishlist</span></button>
-											<button class='add-to-compare'><i class='fa fa-exchange'></i><span class='tooltipp'>add to compare</span></button>
 											<button class='quick-view' ><i class='fa fa-eye'></i><span class='tooltipp'>quick view</span></button>
 										</div>
 									</div>
@@ -313,7 +309,7 @@ if (isset($_POST["Common"])) {
 												</div>
 												<div class="product-body">
 													<h3 class="product-name"><a href="#">'.$nama_barang.'</a></h3>
-													<h4 class="product-price"><span class="qty">'.$n.'</span>$'.$harga_barang.'</h4>
+													<h4 class="product-price"><span class="qty">'.$n.'</span>Rp'.$harga_barang.'</h4>
 												</div>
 												
 											</div>'
@@ -324,8 +320,8 @@ if (isset($_POST["Common"])) {
 			}
             
             echo '<div class="cart-summary">
-				    <small class="qty">'.$n.' Item(s) selected</small>
-				    <h5>$'.$total_price.'</h5>
+				    <small class="qty">'.$n.' Item Dipilih</small>
+				    <h5>Rp'.$total_price.'</h5>
 				</div>'
             ?>
 				
