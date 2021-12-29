@@ -44,25 +44,10 @@ include 'header.php';
 				<!-- row -->
 				<div class="row">
 					<!-- ASIDE -->
-					<div id="aside" class="col-md-3">
-						<!-- aside Widget -->
-						<div id="get_category">
-				        </div>
-						<!-- /aside Widget -->
-
-						<!-- aside Widget -->
-						<!-- /aside Widget -->
-
-						<!-- aside Widget -->
-						<!-- /aside Widget -->
-
-						<!-- aside Widget -->
-						<!-- /aside Widget -->
-					</div>
 					<!-- /ASIDE -->
 
 					<!-- STORE -->
-					<div id="store" class="col-md-9">
+					<div id="store" class="">
 						<!-- store top filter -->
 						<div class="store-filter clearfix">
 							<div class="store-sort">

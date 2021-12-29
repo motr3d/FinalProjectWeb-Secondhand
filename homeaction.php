@@ -128,7 +128,7 @@ if(isset($_POST["get_seleted_Category"]) ||  isset($_POST["search"])){
 			echo "
 					
                         
-                        <div class='col-md-4 col-xs-6'>
+                        <div class='col-md-3 col-xs-6'>
 								<a href='barang.php?p=$pro_id'><div class='product'>
 									<div class='product-img'>
 										<img  src='product_images/$pro_image' style='max-height: 170px;' alt=''>
