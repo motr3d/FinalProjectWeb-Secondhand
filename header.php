@@ -113,7 +113,7 @@ session_start();
 								<!-- Cart -->
 								<div class="dropdown">
 									<a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
-										<i class="fas fa-shopping-cart"></i>
+										<i class="fas fa-shopping-cart" style="font-size:28px;color:black"></i>
 										<div class="badge qty">0</div>
 									</a>
 									<div class="cart-dropdown"  >
