@@ -16,9 +16,9 @@
   
 </head>
 
-<body class="dark-edition">
+<body >
   <div class="wrapper ">
-    <div class="sidebar" data-color="green" data-background-color="white" data-image="./assets/img/sidebar-2.jpg">
+    <div class="sidebar"  data-background-color="black" data-image="./assets/img/sidebar-2.jpg">
       <!--
       Tip 1: You can change the color of the sidebar using: data-color="purple | azure | green | orange | danger"
 
@@ -33,19 +33,16 @@
         <ul class="nav">
           <li class="nav-item active">
             <a class="nav-link" href="index.php">
-              <i class="material-icons">dashboard</i>
               <p>Dashboard</p>
             </a>
           </li>
           <li class="nav-item ">
             <a class="nav-link" href="adduser.php">
-              <i class="material-icons">person</i>
               <p>Add User</p>
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="productlist.php">
-              <i class="material-icons">list</i>
               <p>Product List</p>
             </a>
             
@@ -53,31 +50,21 @@
           
           <li class="nav-item ">
             <a class="nav-link" href="orders.php">
-              <i class="material-icons">library_books</i>
               <p>Orders</p>
             </a>
           </li>
           <li class="nav-item ">
             <a class="nav-link" href="addproduct.php">
-              <i class="material-icons">add</i>
               <p>Add Products</p>
             </a>
           </li>
           <li class="nav-item ">
             <a class="nav-link" href="manageuser.php">
-              <i class="material-icons">edit_user</i>
               <p>Manage User</p>
             </a>
           </li>
           <li class="nav-item ">
-            <a class="nav-link" href="barangpesanan.php">
-              <i class="material-icons">library_books</i>
-              <p>Barang Pesanan</p>
-            </a>
-          </li>
-          <li class="nav-item ">
             <a class="nav-link" href="index.php">
-              <i class="material-icons">logout</i>
               <p>Logout</p>
             </a>
           </li>
@@ -90,5 +77,5 @@
         </ul>
       </div>
     </div>
-</body>
+    
     
