@@ -11,7 +11,7 @@ $errors = array();
 define('DB_SERVER', 'localhost');
    define('DB_USERNAME', 'Taka');
    define('DB_PASSWORD', '');
-   define('DB_DATABASE', 'secondhand');
+   define('DB_DATABASE', 'secondhandsell');
    $db = mysqli_connect(DB_SERVER,DB_USERNAME,DB_PASSWORD,DB_DATABASE);
 if (!$db) {
     die("Connection failed: " . mysqli_connect_error());
@@ -46,7 +46,7 @@ if (isset($_POST['reg_user'])) {
     }
 
     if ($user['email'] === $email) {
-      array_push($errors, "email Sudah dibuat");
+      array_push($errors, "Email Sudah dibuat");
     }
   }
 

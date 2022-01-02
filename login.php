@@ -49,17 +49,17 @@ if(isset($_POST["email"]) && isset($_POST["password"])){
 				exit();
 				
 			}
-			//if user is login from page we will send login_success /2021 TEST INI YA INI
+			//if user is login from page we will send login_success /2022 TEST INI YA INI
 			echo "login_success";
-			$BackToMyPage = $_SERVER['HTTP_REFERER'];
-				if(!isset($BackToMyPage)) {
-					header('Location: '.$BackToMyPage);
-					echo"<script type='text/javascript'>
+			// $BackToMyPage = $_SERVER['HTTP_REFERER'];
+			// 	if(!isset($BackToMyPage)) {
+			// 		header('Location: '.$BackToMyPage);
+			// 		echo"<script type='text/javascript'>
 					
-					</script>";
-				} else {
-					header('Location: index.php'); // default page
-				} 
+			// 		</script>";
+			// 	} else {
+			// 		header('Location: index.php'); // default page
+			// 	} 
 				
 			
             exit;
