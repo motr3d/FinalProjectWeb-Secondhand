@@ -29,7 +29,6 @@ if(isset($_POST["getProduct"])){
 		while($row = mysqli_fetch_array($run_query)){
 			$pro_id    = $row['id_barang'];
 			$pro_cat   = $row['kategori_barang'];
-			$pro_brand = $row['merek_barang'];
 			$pro_title = $row['nama_barang'];
 			$pro_price = $row['harga_barang'];
 			$pro_image = $row['gambar_barang'];
@@ -81,7 +80,7 @@ if(isset($_POST["getProduct"])){
 						<a href='#' class='close' data-dismiss='alert' aria-label='close'></a>
 						<b>Barang Sudah Di Simpan..!</b>
 				</div>
-			";//not in video
+			";
 		} else {
 			$sql = "INSERT INTO `keranjang`
 			(`p_id`, `ip_add`, `user_id`, `kapasitas`) 
@@ -126,13 +125,14 @@ if(isset($_POST["getProduct"])){
 		
 	}
 
-//Count User cart item
+
+//menghitung item keranjang Pengguna 
 if (isset($_POST["count_item"])) {
-	//When user is logged in then we will count number of item in cart by using user session id
+	// Ketika pengguna login maka akan menghitung jumlah item di keranjang dengan menggunakan id session pengguna
 	if (isset($_SESSION["uid"])) {
 		$sql = "SELECT COUNT(*) AS count_item FROM keranjang WHERE user_id = $_SESSION[uid]";
 	}else{
-		//When user is not logged in then we will count number of item in cart by using users unique ip address
+		// Ketika pengguna tidak login maka akan menghitung jumlah item di keranjang dengan menggunakan alamat ip unik pengguna
 		$sql = "SELECT COUNT(*) AS count_item FROM keranjang WHERE ip_add = '$ip_add' AND user_id < 0";
 	}
 	
@@ -141,21 +141,21 @@ if (isset($_POST["count_item"])) {
 	echo $row["count_item"];
 	exit();
 }
-//Count User cart item
+//Hitung item keranjang Pengguna
 
-//Get Cart Item From Database to Dropdown menu
+//Dapatkan Item Keranjang Dari Database ke Menu Dropdown
 if (isset($_POST["Common"])) {
 
 	if (isset($_SESSION["uid"])) {
-		//When user is logged in this query will execute
+		//Ketika pengguna masuk, kueri ini akan dieksekusi
 		$sql = "SELECT a.id_barang,a.nama_barang,a.harga_barang,a.deskripsi_barang,a.gambar_barang,b.id,b.kapasitas FROM barang a,keranjang b WHERE a.id_barang=b.p_id AND b.user_id='$_SESSION[uid]'";
 	}else{
-		//When user is not logged in this query will execute
+		//Ketika pengguna tidak masuk, kueri ini akan dijalankan
 		$sql = "SELECT a.id_barang,a.nama_barang,a.deskripsi_barang,a.harga_barang,a.gambar_barang,b.id,b.kapasitas FROM barang a,keranjang b WHERE a.id_barang=b.p_id AND b.ip_add='$ip_add' AND b.user_id < 0";
 	}
 	$query = mysqli_query($con,$sql);
 	if (isset($_POST["getCartItem"])) {
-		//display cart item in dropdown menu
+		//tampilkan item keranjang di menu dropdown
 		if (mysqli_num_rows($query) > 0) {
 			$n=0;
 			$total_price=0;
@@ -205,7 +205,7 @@ if (isset($_POST["Common"])) {
     
     if (isset($_POST["checkOutDetails"])) {
 		if (mysqli_num_rows($query) > 0) {
-			//display user cart item with "Ready to checkout" button if user is not login
+			//tampilkan item keranjang pengguna dengan tombol "Siap untuk checkout" jika pengguna tidak login
 			echo '<div class="main ">
 			<div class="table-responsive">
 			<form method="post" action="login_form.php">
@@ -290,7 +290,7 @@ if (isset($_POST["Common"])) {
 				
 							</table></div></div>';
                 }else if(isset($_SESSION["uid"])){
-					//Paypal checkout form
+					//Pembayaran form
 					echo '
 					</form>
 					
@@ -335,7 +335,7 @@ if (isset($_POST["Common"])) {
 	
 }
 
-//Remove Item From cart
+//Menghapus data dikeranjang
 if (isset($_POST["removeItemFromCart"])) {
 	$remove_id = $_POST["rid"];
 	if (isset($_SESSION["uid"])) {
@@ -353,7 +353,7 @@ if (isset($_POST["removeItemFromCart"])) {
 }
 
 
-//Update Item From cart
+//Mengupdate data dari keranjang
 if (isset($_POST["updateCartItem"])) {
 	$update_id = $_POST["update_id"];
 	$kapasitas = $_POST["kapasitas"];

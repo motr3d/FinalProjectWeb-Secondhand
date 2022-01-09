@@ -91,7 +91,7 @@ span.price {
   color: grey;
 }
 
-/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
+/* Tata letak responsif - ketika lebar layar kurang dari 800px, buat dua kolom menumpuk di atas satu sama lain alih-alih bersebelahan (juga ubah arah - buat kolom di atas) */
 @media (max-width: 800px) {
   .row-checkout {
     flex-direction: column-reverse;

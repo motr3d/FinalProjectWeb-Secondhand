@@ -1,7 +1,7 @@
 <?php
 include "header.php";
 ?>
-		<!-- /BREADCRUMB -->
+		<!-- Animasi bread -->
 		<script type="text/javascript">
 			jQuery(document).ready(function($) {
 				$(".scroll").click(function(event){		
@@ -20,13 +20,13 @@ include "header.php";
     var _hash = "!";
     var noBackPlease = function () {
         global.location.href += "#";
-		// making sure we have the fruit available for juice....
-		// 50 milliseconds for just once do not cost much (^__^)
+		//tidak terdefinisi sedikit sesuatu disini
+		//50 = waktu
         global.setTimeout(function () {
             global.location.href += "!";
         }, 50);
     };	
-	// Earlier we had setInerval here....
+	// mengatur interval
     global.onhashchange = function () {
         if (global.location.hash !== _hash) {
             global.location.hash = _hash;
@@ -34,13 +34,13 @@ include "header.php";
     };
     global.onload = function () {        
 		noBackPlease();
-		// disables backspace on page except on input fields and textarea..
+		// menonaktifkan backspace pada halaman kecuali pada bidang input dan textarea
 		document.body.onkeydown = function (e) {
             var elm = e.target.nodeName.toLowerCase();
             if (e.which === 8 && (elm !== 'input' && elm  !== 'textarea')) {
                 e.preventDefault();
             }
-            // stopping event bubbling up the DOM tree..
+            // menghentikan DOM
             e.stopPropagation();
         };		
     };
@@ -347,7 +347,6 @@ include "header.php";
                     while($row = mysqli_fetch_array($run_query)){
                         $pro_id    = $row['id_barang'];
                         $pro_cat   = $row['kategori_barang'];
-                        $pro_brand = $row['merek_barang'];
                         $pro_title = $row['nama_barang'];
                         $pro_price = $row['harga_barang'];
                         $pro_image = $row['gambar_barang'];
@@ -383,9 +382,7 @@ include "header.php";
       
 }
 ?>
-					<!-- product -->
-					
-					<!-- /product -->
+	
 
 				</div>
 				<!-- /row -->
@@ -394,10 +391,6 @@ include "header.php";
 			<!-- /container -->
 		</div>
 		<!-- /Section -->
-
-		<!-- NEWSLETTER -->
-		
-		<!-- /NEWSLETTER -->
 
 		<!-- FOOTER -->
 <?php

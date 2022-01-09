@@ -9,7 +9,7 @@ session_start();
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		 <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+		 <!-- 3 meta tag di atas *harus* didahulukan di head; konten dihead lainnya harus datang *setelah* tag ini -->
 
 		<title>SecondHand</title>
 
@@ -110,7 +110,7 @@ session_start();
 						<div class="col-md-3 clearfix">
 							<div class="header-ctn">
 
-								<!-- Cart -->
+								<!-- Cart/Keranjang -->
 								<div class="dropdown">
 									<a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
 										<i class="fas fa-shopping-cart" style="font-size:28px;color:black"></i>

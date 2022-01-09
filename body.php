@@ -81,7 +81,6 @@
                     while($row = mysqli_fetch_array($run_query)){
                         $pro_id    = $row['id_barang'];
                         $pro_cat   = $row['kategori_barang'];
-                        $pro_brand = $row['merek_barang'];
                         $pro_title = $row['nama_barang'];
                         $pro_price = $row['harga_barang'];
                         $pro_image = $row['gambar_barang'];
@@ -136,12 +135,7 @@
 			<!-- /container -->
 		</div>
 		<!-- /SECTION -->
-
-		<!-- HOT DEAL SECTION -->
-	
-		<!-- /HOT DEAL SECTION -->
 		
-
 		<!-- SECTION -->
 		<div class="section">
 			<!-- container -->
@@ -176,7 +170,6 @@
                     while($row = mysqli_fetch_array($run_query)){
                         $pro_id    = $row['id_barang'];
                         $pro_cat   = $row['kategori_barang'];
-                        $pro_brand = $row['merek_barang'];
                         $pro_title = $row['nama_barang'];
                         $pro_price = $row['harga_barang'];
                         $pro_image = $row['gambar_barang'];
