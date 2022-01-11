@@ -11,10 +11,10 @@ include "topheader.php";
         <div class="container-fluid">
          <div class="panel-body">
 		<a>
-            <?php  //success message
+            <?php  //pesan scuess
             if(isset($_POST['success'])) {
             $success = $_POST["success"];
-            echo "<h1 style='color:#0C0'>Your Product was added successfully &nbsp;&nbsp;  <span class='glyphicon glyphicon-ok'></h1></span>";
+            echo "<h1 style='color:#0C0'>Produk berhasil di tambahkan &nbsp;&nbsp;  <span class='glyphicon glyphicon-ok'></h1></span>";
             }
             ?></a>
                 </div>

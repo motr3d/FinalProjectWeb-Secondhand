@@ -8,7 +8,7 @@ if(isset($_GET['action']) && $_GET['action']!="" && $_GET['action']=='delete')
 {
 $id_pesanan=$_GET['id_pesanan'];
 
-/*this is delet query*/
+/*ini adalah penghapusan*/
 // mysqli_query($con,"delete from barang_pesanan where id_pesanan='$id_pesanan'")or die("delete query is incorrect...");
 // mysqli_query($con,"delete from data_pesanan where id_pesanan='$id_pesanan'")or die("delete query is incorrect...");
 mysqli_query($con,"delete barang_pesanan.*, data_pesanan.* from barang_pesanan inner join data_pesanan on barang_pesanan.id_pesanan=data_pesanan.id_pesanan where barang_pesanan.id_pesanan='$id_pesanan'");
@@ -34,7 +34,7 @@ include "topheader.php";
       <!-- End Navbar -->
       <div class="content">
         <div class="container-fluid">
-          <!-- your content here -->
+         <!-- konten-->
           <div class="col-md-14">
             <div class="card ">
               <div class="card-header card-header-primary">

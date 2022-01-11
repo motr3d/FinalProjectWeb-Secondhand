@@ -19,11 +19,11 @@
 <body >
   <div class="wrapper">
     <div class="sidebar" data-color="purple" data-background-color="" data-image="">
-      <!--
-      Tip 1: You can change the color of the sidebar using: data-color="purple | azure | green | orange | danger"
+   <!--
+       Tip 1: dapat mengubah warna sidebar menggunakan: data-color="purple | azure | green | orange | hazard"
 
-      Tip 2: you can also add an image using data-image tag
-  -->
+       Tip 2: juga dapat menambahkan gambar menggunakan tag data-gambar
+   -->
       <div class="logo">
         <a href="" class="simple-text logo-normal">
           SecondHand

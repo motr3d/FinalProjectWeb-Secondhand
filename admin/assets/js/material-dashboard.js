@@ -1,25 +1,9 @@
-/*!
-
- =========================================================
- * Material Dashboard Dark Edition - v2.1.0
- =========================================================
-
- * Product Page: https://www.creative-tim.com/product/material-dashboard-dark
- * Copyright 2018 Creative Tim (http://www.creative-tim.com)
-
- * Coded by www.creative-tim.com
-
- =========================================================
-
- * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
- */
 
 (function() {
   isWindows = navigator.platform.indexOf('Win') > -1 ? true : false;
 
   if (isWindows) {
-    // if we are on windows OS we activate the perfectScrollbar function
+    // jika  berada di OS windows mengaktifkan fungsi perfectScrollbar
     $('.sidebar .sidebar-wrapper, .main-panel').perfectScrollbar();
 
     $('html').addClass('perfect-scrollbar-on');
@@ -59,15 +43,15 @@ $(document).ready(function() {
 
   window_width = $(window).width();
 
-  // check if there is an image set for the sidebar's background
+  // periksa apakah ada gambar yang disetel untuk latar belakang bilah sisi// check if there is an image set for the sidebar background
   md.checkSidebarImage();
 
-  //    Activate bootstrap-select
+  // Aktifkan bootstrap-pilih
   if ($(".selectpicker").length != 0) {
     $(".selectpicker").selectpicker();
   }
 
-  //  Activate the tooltips
+// Aktifkan tooltips
   $('[rel="tooltip"]').tooltip();
 
   $('.form-control').on("focus", function() {
@@ -76,7 +60,7 @@ $(document).ready(function() {
     $(this).parent(".input-group").removeClass("input-group-focus");
   });
 
-  // remove class has-error for checkbox validation
+  // hapus kesalahan kelas untuk validasi kotak centang
   $('input[type="checkbox"][required="true"], input[type="radio"][required="true"]').on('click', function() {
     if ($(this).hasClass('error')) {
       $(this).closest('div').removeClass('has-error');
@@ -135,11 +119,11 @@ $(document).on('click', '.navbar-toggler', function() {
 
 });
 
-// activate collapse right menu when the windows is resized
+// aktifkan ciutkan menu kanan saat jendela diubah ukurannya
 $(window).resize(function() {
   md.initSidebarsCheck();
 
-  // reset the seq for charts drawing animations
+ // reset seq untuk animasi menggambar grafik
   seq = seq2 = 0;
 
   setTimeout(function() {
@@ -177,7 +161,7 @@ md = {
   initDashboardPageCharts: function() {
 
     if ($('#dailySalesChart').length != 0 || $('#completedTasksChart').length != 0 || $('#websiteViewsChart').length != 0) {
-      /* ----------==========     Daily Sales Chart initialization    ==========---------- */
+    /* ----------========== Inisialisasi Grafik Penjualan Harian ==========---------- */
 
       dataDailySalesChart = {
         labels: ['M', 'T', 'W', 'T', 'F', 'S', 'S'],
@@ -191,7 +175,7 @@ md = {
           tension: 0
         }),
         low: 0,
-        high: 50, // creative tim: we recommend you to set the high sa the biggest value + something for a better look
+        high: 50, // ntuk mengatur tinggi sa nilai terbesar
         chartPadding: {
           top: 0,
           right: 0,
@@ -205,7 +189,7 @@ md = {
       md.startAnimationForLineChart(dailySalesChart);
 
 
-      /* ----------==========     Completed Tasks Chart initialization    ==========---------- */
+  /* ----------========== Inisialisasi Bagan Tugas Selesai ============---------- */
 
       dataCompletedTasksChart = {
         labels: ['12p', '3p', '6p', '9p', '12p', '3a', '6a', '9a'],
@@ -219,7 +203,7 @@ md = {
           tension: 0
         }),
         low: 0,
-        high: 1000, // creative tim: we recommend you to set the high sa the biggest value + something for a better look
+        high: 1000, 
         chartPadding: {
           top: 0,
           right: 0,
@@ -230,11 +214,11 @@ md = {
 
       var completedTasksChart = new Chartist.Line('#completedTasksChart', dataCompletedTasksChart, optionsCompletedTasksChart);
 
-      // start animation for the Completed Tasks Chart - Line Chart
+     // mulai animasi untuk Bagan Tugas yang Selesai - Bagan Garis
       md.startAnimationForLineChart(completedTasksChart);
 
 
-      /* ----------==========     Emails Subscription Chart initialization    ==========---------- */
+  /* ----------========== Email Inisialisasi============---------- */
 
       var dataWebsiteViewsChart = {
         labels: ['J', 'F', 'M', 'A', 'M', 'J', 'J', 'A', 'S', 'O', 'N', 'D'],
@@ -268,7 +252,7 @@ md = {
       ];
       var websiteViewsChart = Chartist.Bar('#websiteViewsChart', dataWebsiteViewsChart, optionsWebsiteViewsChart, responsiveOptions);
 
-      //start animation for the Emails Subscription Chart
+      //mulai animasi untuk Email
       md.startAnimationForBarChart(websiteViewsChart);
     }
   },
@@ -324,7 +308,7 @@ md = {
 
       $sidebar_nav = $sidebar_wrapper.find(' > .nav');
 
-      // insert the navbar form before the sidebar list
+    // masukkan formulir navbar sebelum daftar bilah sisi
       $nav_content = $(nav_content);
       $navbar_form = $(navbar_form);
       $nav_content.insertBefore($sidebar_nav);
@@ -335,13 +319,13 @@ md = {
 
       });
 
-      // simulate resize so all the charts/maps will be redrawn
+     // simulasikan pengubahan ukuran sehingga semua bagan/peta akan digambar ulang
       window.dispatchEvent(new Event('resize'));
 
       mobile_menu_initialized = true;
     } else {
       if ($(window).width() > 991) {
-        // reset all the additions that we made for the sidebar wrapper only if the screen is bigger than 991px
+        // reset semua tambahan yang kita buat untuk pembungkus sidebar hanya jika layarnya lebih besar dari 991px
         $sidebar_wrapper.find('.navbar-form').remove();
         $sidebar_wrapper.find('.nav-mobile-menu').remove();
 
@@ -402,10 +386,10 @@ md = {
   }
 }
 
-// Returns a function, that, as long as it continues to be invoked, will not
-// be triggered. The function will be called after it stops being called for
-// N milliseconds. If `immediate` is passed, trigger the function on the
-// leading edge, instead of the trailing.
+// Mengembalikan sebuah fungsi, yang selama itu terus dipanggil, tidak akan
+// dipicu. Fungsi akan dipanggil setelah berhenti dipanggil
+// N milidetik. Jika `immediate` diteruskan, picu fungsi pada
+// leading edge, bukan trailing.
 
 function debounce(func, wait, immediate) {
   var timeout;

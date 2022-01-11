@@ -25,7 +25,7 @@
                 </a>
                 
               </li>
-              <!-- your navbar here -->
+              <!-- navbar here -->
             </ul>
           </div>
         </div>

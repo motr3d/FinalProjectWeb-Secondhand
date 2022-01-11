@@ -9,7 +9,7 @@
               </li>
             </ul>
           </nav>
-          <!-- your footer here -->
+          <!-- footer-->
         </div>
       </footer>
     </div>
@@ -20,17 +20,17 @@
   <script src="./assets/js/core/bootstrap-material-design.min.js"></script>
   <script src=""></script>
   <script src="./assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
-  <!-- Place this tag in your head or just before your close body tag. -->
+  <!-- Tempatkan tag ini di kepala atau tepat sebelum tag close body. -->
   <script async defer src=""></script>
-  <!--  Google Maps Plugin    -->
+  <!--  Google Maps Plugin engga jadi -->
   <script src=""></script>
   <!-- Chartist JS -->
   <script src="./assets/js/plugins/chartist.min.js"></script>
   <!--  Notifications Plugin    -->
   <script src="./assets/js/plugins/bootstrap-notify.js"></script>
-  <!-- Control Center for Material Dashboard: parallax effects, scripts for the example pages etc -->
+  <!-- Pusat Kontrol untuk Dasbor Material: efek paralaks, skrip untuk halaman contoh, dll -->
   <script src="./assets/js/material-dashboard.js?v=2.1.0"></script>
-  <!-- Material Dashboard DEMO methods, don't include it in your project! -->
+  <!-- Metode DEMO Dasbor Material, jangan sertakan dalam projek! -->
   <script src="./assets/demo/demo.js"></script>
   <script>
     $(document).ready(function() {
@@ -46,7 +46,7 @@
         window_width = $(window).width();
 
         $('.fixed-plugin a').click(function(event) {
-          // Alex if we click on switch, stop propagation of the event, so the dropdown will not be hide, otherwise we set the  section active
+          // WTHECK jika mengklik sakelar, hentikan propagasi, sehingga dropdown tidak akan disembunyikan, jika tidak atur bagiannya menjadi aktif
           if ($(this).hasClass('switch-trigger')) {
             if (event.stopPropagation) {
               event.stopPropagation();
@@ -180,12 +180,12 @@
             }, 300);
           }
 
-          // we simulate the window Resize so the charts will get updated in realtime.
+         // mensimulasikan Resize jendela sehingga grafik akan diperbarui secara realtime.
           var simulateWindowResize = setInterval(function() {
             window.dispatchEvent(new Event('resize'));
           }, 180);
 
-          // we stop the simulation of Window Resize after the animations are completed
+          // hentikan simulasi Window Resize setelah animasi selesai
           setTimeout(function() {
             clearInterval(simulateWindowResize);
           }, 1000);

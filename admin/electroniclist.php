@@ -18,7 +18,7 @@ if(file_exists($path)==true)
 }
 else
 {}
-/*this is delet query*/
+/*delet query*/
 mysqli_query($con,"delete from barang where id_barang='$id_barang'")or die("query is incorrect...");
 }
 

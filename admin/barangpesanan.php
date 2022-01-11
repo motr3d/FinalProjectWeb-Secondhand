@@ -8,7 +8,7 @@ if(isset($_GET['action']) && $_GET['action']!="" && $_GET['action']=='delete')
 {
 $id_pesanan=$_GET['id_pesanan'];
 
-/*this is delet query*/
+/*delet query*/
 mysqli_query($con,"delete from barang_pesanan where id_pesanan='$id_pesanan'")or die("delete query is incorrect...");
 } 
 

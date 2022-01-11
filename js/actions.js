@@ -7,7 +7,7 @@ $(document).ready(function(){
     producthome();
     
     
-	//cat() is a funtion fetching category record from database whenever page is load
+	//cat() adalah fungsi yang mengambil record kategori dari database setiap kali halaman dimuat
 	function cat(){
 		$.ajax({
 			url	:	"action.php",
@@ -30,7 +30,7 @@ $(document).ready(function(){
 			}
 		})
 	}
-	//brand() is a funtion fetching brand record from database whenever page is load
+	//brand() adalah fungsi yang mengambil catatan merek dari database setiap kali halaman dimuat
 	function brand(){
 		$.ajax({
 			url	:	"action.php",
@@ -41,7 +41,7 @@ $(document).ready(function(){
 			}
 		})
 	}
-	//product() is a funtion fetching product record from database whenever page is load
+	//product() adalah fungsi yang mengambil record produk dari database setiap kali halaman dimuat
 		function product(){
 		$.ajax({
 			url	:	"action.php",
@@ -75,9 +75,9 @@ $(document).ready(function(){
 	}
    
     
-	/*	when page is load successfully then there is a list of categories when user click on category we will get category id and 
-		according to id we will show products
-	*/
+/* ketika halaman berhasil dimuat maka ada daftar kategori ketika pengguna mengklik kategori kita akan mendapatkan id kategori dan
+sesuai dengan id akan menampilkan produk
+*/
 	$("body").delegate(".category","click",function(event){
 		$("#get_product").html("<h3>Loading...</h3>");
 		event.preventDefault();
@@ -115,58 +115,58 @@ $(document).ready(function(){
 	
 	})
 
-	/*	when page is load successfully then there is a list of brands when user click on brand we will get brand id and 
-		according to brand id we will show products
-	*/
-	$("body").delegate(".selectBrand","click",function(event){
-		event.preventDefault();
-		$("#get_product").html("<h3>Loading...</h3>");
-		var bid = $(this).attr('bid');
+	/* ketika halaman berhasil dimuat maka ada daftar merek ketika pengguna mengklik merek akan mendapatkan id merek dan
+sesuai dengan id merek akan menampilkan produk
+*/
+	// $("body").delegate(".selectBrand","click",function(event){
+	// 	event.preventDefault();
+	// 	$("#get_product").html("<h3>Loading...</h3>");
+	// 	var bid = $(this).attr('bid');
 		
-			$.ajax({
-			url		:	"action.php",
-			method	:	"POST",
-			data	:	{selectBrand:1,brand_id:bid},
-			success	:	function(data){
-				$("#get_product").html(data);
-				if($("body").width() < 480){
-					$("body").scrollTop(683);
-				}
-			}
-		})
+	// 		$.ajax({
+	// 		url		:	"action.php",
+	// 		method	:	"POST",
+	// 		data	:	{selectBrand:1,brand_id:bid},
+	// 		success	:	function(data){
+	// 			$("#get_product").html(data);
+	// 			if($("body").width() < 480){
+	// 				$("body").scrollTop(683);
+	// 			}
+	// 		}
+	// 	})
 	
-	})
-	/*
-		At the top of page there is a search box with search button when user put name of product then we will take the user 
-		given string and with the help of sql query we will match user given string to our database keywords column then matched product 
-		we will show 
-	*/
-	$("#search_btn").click(function(){
-		$("#get_product").html("<h3>Loading...</h3>");
-		var keyword = $("#search").val();
-		if(keyword != ""){
-			$.ajax({
-			url		:	"action.php",
-			method	:	"POST",
-			data	:	{search:1,keyword:keyword},
-			success	:	function(data){ 
-				$("#get_product").html(data);
-				if($("body").width() < 480){
-					$("body").scrollTop(683);
-				}
-			}
-		})
-		}
-	})
+	// })
+/*
+Di bagian atas halaman ada kotak pencarian dengan tombol pencarian ketika pengguna memasukkan nama produk maka akan mengambil pengguna
+string yang diberikan dan dengan bantuan kueri sql akan mencocokkan string yang diberikan pengguna ke kolom kata kunci database kemudian mencocokkan produk
+akan menunjukkan
+*/
+	// $("#search_btn").click(function(){
+	// 	$("#get_product").html("<h3>Loading...</h3>");
+	// 	var keyword = $("#search").val();
+	// 	if(keyword != ""){
+	// 		$.ajax({
+	// 		url		:	"action.php",
+	// 		method	:	"POST",
+	// 		data	:	{search:1,keyword:keyword},
+	// 		success	:	function(data){ 
+	// 			$("#get_product").html(data);
+	// 			if($("body").width() < 480){
+	// 				$("body").scrollTop(683);
+	// 			}
+	// 		}
+	// 	})
+	// 	}
+	// })
 	//end
 
 
-	/*
-		Here #login is login form id and this form is available in index.php page
-		from here input data is sent to login.php page
-		if you get login_success string from login.php page means user is logged in successfully and window.location is 
-		used to redirect user from home page to profile.php page
-	*/
+/*
+Di sini #login adalah id formulir masuk dan formulir ini tersedia di halaman index.php
+dari sini data yang diinput dikirim ke halaman login.php
+jika Anda mendapatkan string login_success dari halaman login.php berarti pengguna berhasil login dan window.location adalah
+digunakan untuk mengarahkan pengguna dari halaman beranda ke halaman profile.php
+*/
 	$("#login").on("submit",function(event){
 		event.preventDefault();
 		$(".overlay").show();
@@ -188,7 +188,7 @@ $(document).ready(function(){
 	})
 	//end
 
-	//Get User Information before checkout
+	//Dapatkan Informasi Pengguna sebelum checkout
 	$("#signup_form").on("submit",function(event){
 		event.preventDefault();
 		$(".overlay").show();
@@ -226,9 +226,9 @@ $(document).ready(function(){
     
     
     
-	//Get User Information before checkout end here
+	//Dapatkan Informasi Pengguna sebelum checkout berakhir di sini
 
-	//Add Product into Cart
+//Tambahkan Produk ke Keranjang
 	$("body").delegate("#product","click",function(event){
 		var pid = $(this).attr("pid");
 		
@@ -246,8 +246,8 @@ $(document).ready(function(){
 			}
 		})
 	})
-	//Add Product into Cart End Here
-	//Count user cart items funtion
+//Tambahkan Produk ke Keranjang  
+//Hitung fungsi item keranjang pengguna
 	count_item();
 	function count_item(){
 		$.ajax({
@@ -259,9 +259,9 @@ $(document).ready(function(){
 			}
 		})
 	}
-	//Count user cart items funtion end
+//Hitung fungsi item keranjang pengguna berakhir
 
-	//Fetch Cart item from Database to dropdown menu
+//Ambil item Cart dari Database ke menu dropdown
 	getCartItem();
 	function getCartItem(){
 		$.ajax({
@@ -276,15 +276,15 @@ $(document).ready(function(){
 		})
 	}
 
-	//Fetch Cart item from Database to dropdown menu
+	//Ambil item Cart dari Database ke menu dropdown
 
-	/*
-		Whenever user change qty we will immediate update their total amount by using keyup funtion
-		but whenever user put something(such as ?''"",.()''etc) other than number then we will make qty=1
-		if user put qty 0 or less than 0 then we will again make it 1 qty=1
-		('.total').each() this is loop funtion repeat for class .total and in every repetation we will perform sum operation of class .total value 
-		and then show the result into class .net_total
-	*/
+/*
+Setiap kali pengguna mengubah qty, akan segera memperbarui jumlah total mereka dengan menggunakan fungsi keyup
+tetapi setiap kali pengguna memasukkan sesuatu (seperti ?''"",.()''etc) selain angka maka akan membuat qty=1
+jika pengguna memasukkan qty 0 atau kurang dari 0 maka akan membuatnya lagi 1 qty=1
+('.total').each() ini adalah pengulangan fungsi loop untuk kelas .total dan dalam setiap pengulangan akan melakukan operasi penjumlahan nilai kelas .total
+dan kemudian tunjukkan hasilnya ke kelas .net_total
+*/
 	$("body").delegate(".qty","keyup",function(event){
 		event.preventDefault();
 		var row = $(this).parent().parent();
@@ -305,13 +305,12 @@ $(document).ready(function(){
 		$('.net_total').html("Total : Rp. " +net_total);
 
 	})
-	//Change Quantity end here 
+//Ubah Kuantitas berakhir di sini
 
-	/*
-		whenever user click on .remove class we will take product id of that row 
-		and send it to action.php to perform product removal operation
-	*/
-    
+/*
+setiap kali pengguna mengklik .remove class, akan mengambil id produk dari baris itu
+dan kirimkan ke action.php untuk melakukan operasi penghapusan produk
+*/
 	   
     $("body").delegate(".remove","click",function(event){
         var remove = $(this).parent().parent().parent();
@@ -328,10 +327,10 @@ $(document).ready(function(){
     })
     
     
-	/*
-		whenever user click on .update class we will take product id of that row 
-		and send it to action.php to perform product qty updation operation
-	*/
+/*
+setiap kali pengguna mengklik .update class, akan mengambil id produk dari baris itu
+dan kirimkan ke action.php untuk melakukan operasi pembaruan qty produk
+*/
 	$("body").delegate(".update","click",function(event){
 		var update = $(this).parent().parent().parent();
 		var update_id = update.find(".update").attr("update_id");
@@ -350,13 +349,13 @@ $(document).ready(function(){
 	})
 	checkOutDetails();
 	net_total();
-	/*
-		checkOutDetails() function work for two purposes
-		First it will enable php isset($_POST["Common"]) in action.php page and inside that
-		there is two isset funtion which is isset($_POST["getCartItem"]) and another one is isset($_POST["checkOutDetials"])
-		getCartItem is used to show the cart item into dropdown menu 
-		checkOutDetails is used to show cart item into Cart.php page
-	*/
+/*
+fungsi checkOutDetails() berfungsi untuk dua tujuan
+Pertama itu akan mengaktifkan php isset($_POST["Common"]) di halaman action.php dan di dalamnya
+ada dua isset funtion yaitu isset($_POST["getCartItem"]) dan satu lagi isset($_POST["checkOutDetials"])
+getCartItem digunakan untuk menampilkan item keranjang ke menu dropdown
+checkOutDetails digunakan untuk menampilkan item keranjang ke halaman Cart.php
+*/
 	function checkOutDetails(){
 	 $('.overlay').show();
 		$.ajax({
@@ -370,9 +369,7 @@ $(document).ready(function(){
 			}
 		})
 	}
-	/*
-		net_total function is used to calcuate total amount of cart item
-	*/
+/* fungsi total bersih digunakan untuk menghitung jumlah total item keranjang */
 	function net_total(){
 		var net_total = 0;
 		$('.qty').each(function(){
@@ -387,7 +384,7 @@ $(document).ready(function(){
 		$('.net_total').html("Total : " +net_total);
 	}
 
-	//remove product from cart
+//hapus produk dari keranjang
 
 	page();
 	function page(){

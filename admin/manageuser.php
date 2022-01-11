@@ -6,7 +6,7 @@ if(isset($_GET['action']) && $_GET['action']!="" && $_GET['action']=='delete')
 {
 $user_id=$_GET['user_id'];
 
-/*this is delet quer*/
+/*DELETE QUERY*/
 mysqli_query($con,"delete from data_user where user_id='$user_id'")or header("location: orders.php");
 }
 
