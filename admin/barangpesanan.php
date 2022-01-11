@@ -9,11 +9,7 @@ if(isset($_GET['action']) && $_GET['action']!="" && $_GET['action']=='delete')
 $id_pesanan=$_GET['id_pesanan'];
 
 /*this is delet query*/
-// mysqli_query($con,"delete from barang_pesanan where id_pesanan='$id_pesanan'")or die("delete query is incorrect...");
-// mysqli_query($con,"delete from data_pesanan where id_pesanan='$id_pesanan'")or die("delete query is incorrect...");
-mysqli_query($con,"delete barang_pesanan.*, data_pesanan.* from barang_pesanan inner join data_pesanan on barang_pesanan.id_pesanan=data_pesanan.id_pesanan where barang_pesanan.id_pesanan='$id_pesanan'");
-// mysqli_query($conn, "DELETE $table1, $table2 FROM $table1 INNER JOIN $table2 ON $table1.id_profile=$table2.id_profile WHERE $table1.id_profile = $id");
-
+mysqli_query($con,"delete from barang_pesanan where id_pesanan='$id_pesanan'")or die("delete query is incorrect...");
 } 
 
 ///pagination
@@ -38,24 +34,24 @@ include "topheader.php";
           <div class="col-md-14">
             <div class="card ">
               <div class="card-header card-header-primary">
-                <h4 class="card-title">Orders  / Page <?php echo $page;?> </h4>
+                <h4 class="card-title">Barang Pesanan <?php echo $page;?> </h4>
               </div>
               <div class="card-body">
                 <div class="table-responsive ps">
                   <table class="table table-hover tablesorter " id="">
                     <thead class=" text-primary">
-                      <tr><th>Nomer Pesanan</th><th>Id User</th><th>Nama Kostumer</th><th>Email</th><th>Kode Pos</th><th>Harga Keseluruhan</th><th>Nomer Kartu Pembayaran</th>
+                      <tr><th>Nomor Pesanan</th><th>Nomor Barang Pesanan</th><th>Nomor Barang</th><th>Kapasitas</th>
                     </tr></thead>
                     <tbody>
                       <?php 
-                        $result=mysqli_query($con,"select id_pesanan,user_id, f_name, email, kode_pos, total_amt, cardnumber from data_pesanan ")or die ("query 1 incorrect.....");
+                        $result=mysqli_query($con,"select id_pesanan, id_barang_pesanan, id_barang, kapasitas from barang_pesanan ")or die ("query 1 incorrect.....");
 
-                        while(list($id_pesanan,$user_id,$f_name,$email,$kodepos,$total_amt,$cardnumber)=mysqli_fetch_array($result))
+                        while(list($id_pesanan,$id_barang_pesanan,$id_barang,$kapasitas)=mysqli_fetch_array($result))
                         {	
-                        echo "<tr><td>$id_pesanan</td><td>$user_id</td><td>$f_name</td><td>$email</td><td>$kodepos</td><td>$total_amt</td><td>$cardnumber</td>
+                        echo "<tr><td>$id_pesanan</td><td>$id_barang_pesanan</td><td>$id_barang</td><td>$kapasitas</td>
 
                         <td>
-                        <a class=' btn btn-danger' href='orders.php?id_pesanan=$id_pesanan&action=delete'>Delete</a>
+                        <a class=' btn btn-danger' href='barangpesanan.php?id_pesanan=$id_pesanan&action=delete'>Delete</a>
                         </td></tr>";
                         }
                         ?>

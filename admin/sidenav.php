@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>Hello, world!</title>
+  <title>Hello, Admin!</title>
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
@@ -17,8 +17,8 @@
 </head>
 
 <body >
-  <div class="wrapper ">
-    <div class="sidebar"  data-background-color="black" data-image="./assets/img/sidebar-2.jpg">
+  <div class="wrapper">
+    <div class="sidebar" data-color="purple" data-background-color="" data-image="">
       <!--
       Tip 1: You can change the color of the sidebar using: data-color="purple | azure | green | orange | danger"
 
@@ -26,12 +26,12 @@
   -->
       <div class="logo">
         <a href="" class="simple-text logo-normal">
-          Taka
+          SecondHand
         </a>
       </div>
       <div class="sidebar-wrapper ps-container ps-theme-default" data-ps-id="3a8db1f4-24d8-4dbf-85c9-4f5215c1b29a">
         <ul class="nav">
-          <li class="nav-item active">
+          <li class="nav-item ">
             <a class="nav-link" href="index.php">
               <p>Dashboard</p>
             </a>
@@ -61,11 +61,6 @@
           <li class="nav-item ">
             <a class="nav-link" href="manageuser.php">
               <p>Manage User</p>
-            </a>
-          </li>
-          <li class="nav-item ">
-            <a class="nav-link" href="index.php">
-              <p>Logout</p>
             </a>
           </li>
           <!-- <li class="nav-item active-pro ">

@@ -302,7 +302,7 @@ $(document).ready(function(){
 		$('.total').each(function(){
 			net_total += ($(this).val()-0);
 		})
-		$('.net_total').html("Total :Rp. " +net_total);
+		$('.net_total').html("Total : Rp. " +net_total);
 
 	})
 	//Change Quantity end here 
