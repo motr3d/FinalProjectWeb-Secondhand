@@ -74,7 +74,7 @@
                     include 'db.php';
 								
                     
-					$product_query = "SELECT * FROM barang,kategori WHERE kategori_barang=cat_id AND id_barang BETWEEN 70 AND 75";
+					$product_query = "SELECT * FROM barang,kategori WHERE kategori_barang=cat_id AND id_barang BETWEEN 1 AND 12";
                 $run_query = mysqli_query($con,$product_query);
                 if(mysqli_num_rows($run_query) > 0){
 
@@ -157,7 +157,7 @@
                     include 'db.php';
 								
                     
-					$product_query = "SELECT * FROM barang,kategori WHERE kategori_barang=cat_id AND id_barang BETWEEN 59 AND 65";
+					$product_query = "SELECT * FROM barang,kategori WHERE kategori_barang=cat_id AND id_barang BETWEEN 12 AND 65";
                 $run_query = mysqli_query($con,$product_query);
                 if(mysqli_num_rows($run_query) > 0){
 
@@ -239,7 +239,7 @@
 									<div class="product-body">
 										<p class="product-category">Category</p>
 										<h3 class="product-name"><a href="#">product name goes here</a></h3>
-										<h4 class="product-price">$980.00</h4>
+										<h4 class="product-price">980.00</h4>
 									</div>
 								</div>
 								<!-- /product widget -->
@@ -252,7 +252,7 @@
 									<div class="product-body">
 										<p class="product-category">Category</p>
 										<h3 class="product-name"><a href="#">product name goes here</a></h3>
-										<h4 class="product-price">$980.00</h4>
+										<h4 class="product-price">980.00</h4>
 									</div>
 								</div>
 								<!-- /product widget -->
@@ -265,7 +265,7 @@
 									<div class="product-body">
 										<p class="product-category">Category</p>
 										<h3 class="product-name"><a href="#">product name goes here</a></h3>
-										<h4 class="product-price">$980.00</h4>
+										<h4 class="product-price">980.00</h4>
 									</div>
 								</div>
 								<!-- product widget -->
@@ -280,7 +280,7 @@
 									<div class="product-body">
 										<p class="product-category">Category</p>
 										<h3 class="product-name"><a href="#">product name goes here</a></h3>
-										<h4 class="product-price">$980.00</h4>
+										<h4 class="product-price">980.00</h4>
 									</div>
 								</div>
 								<!-- /product widget -->
@@ -293,7 +293,7 @@
 									<div class="product-body">
 										<p class="product-category">Category</p>
 										<h3 class="product-name"><a href="#">product name goes here</a></h3>
-										<h4 class="product-price">$980.00</h4>
+										<h4 class="product-price">980.00</h4>
 									</div>
 								</div>
 								<!-- /product widget -->
@@ -306,7 +306,7 @@
 									<div class="product-body">
 										<p class="product-category">Category</p>
 										<h3 class="product-name"><a href="#">product name goes here</a></h3>
-										<h4 class="product-price">$980.00</h4>
+										<h4 class="product-price">080.00</h4>
 									</div>
 								</div>
 								<!-- product widget -->
@@ -425,7 +425,7 @@
 								<!-- product widget -->
 								<div class="product-widget">
 									<div class="product-img">
-										<img src="./img/product04.png" alt="">
+										<img src="product_images/product04.png" alt="">
 									</div>
 									<div class="product-body">
 										<p class="product-category">Category</p>
