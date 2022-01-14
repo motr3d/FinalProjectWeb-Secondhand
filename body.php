@@ -10,25 +10,25 @@
     <div class="carousel-inner">
 
       <div class="item active">
-        <img src="product_images/secondhand.jpg" alt="Los Angeles" style="width:100%;">
+        <img src="img/secondhand.jpg" alt="1" style="width:100%;">
         
       </div>
 
       <div class="item">
-        <img src="product_images/secondhand.jpg" style="width:100%;">
+        <img src="img/secondhand.jpg" style="width:100%;">
         
       </div>
     
       <div class="item">
-        <img src="product_images/secondhand.jpg" alt="New York" style="width:100%;">
+        <img src="img/secondhand.jpg" alt="2" style="width:100%;">
         
       </div>
       <div class="item">
-        <img src="product_images/secondhand.jpg" alt="New York" style="width:100%;">
+        <img src="img/secondhand.jpg" alt="3" style="width:100%;">
         
       </div>
       <div class="item">
-        <img src="product_images/secondhand.jpg" alt="New York" style="width:100%;">
+        <img src="img/secondhand.jpg" alt="4" style="width:100%;">
         
       </div>
   
