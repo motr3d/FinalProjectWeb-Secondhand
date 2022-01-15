@@ -223,7 +223,7 @@
 				<!-- row -->
 					<div class="col-md-4 col-xs-6">
 						<div class="section-title">
-							<h4 class="title">Terlaris</h4>
+							<h4 class="title">Produk</h4>
 							<div class="section-nav">
 								<div id="slick-nav-4" class="products-slick-nav"></div>
 							</div>
@@ -234,12 +234,12 @@
 								<!-- product widget -->
 								<div class="product-widget">
 									<div class="product-img">
-										<img src="./img/product04.png" alt="">
+										<img src="product_images/hondacrv1.jpg" alt="">
 									</div>
 									<div class="product-body">
-										<p class="product-category">Category</p>
-										<h3 class="product-name"><a href="#">product name goes here</a></h3>
-										<h4 class="product-price">980.00</h4>
+										<p class="product-category">Kategori</p>
+										<h3 class="product-name"><a href="#">Honda Crv</a></h3>
+										<h4 class="product-price">450000000</h4>
 									</div>
 								</div>
 								<!-- /product widget -->
@@ -247,12 +247,12 @@
 								<!-- product widget -->
 								<div class="product-widget">
 									<div class="product-img">
-										<img src="./img/product05.png" alt="">
+										<img src="product_images/bmw x1.jpg" alt="">
 									</div>
 									<div class="product-body">
-										<p class="product-category">Category</p>
-										<h3 class="product-name"><a href="#">product name goes here</a></h3>
-										<h4 class="product-price">980.00</h4>
+										<p class="product-category">Kategori</p>
+										<h3 class="product-name"><a href="#">BMW X1</a></h3>
+										<h4 class="product-price">500000000</h4>
 									</div>
 								</div>
 								<!-- /product widget -->
@@ -260,12 +260,12 @@
 								<!-- product widget -->
 								<div class="product-widget">
 									<div class="product-img">
-										<img src="./img/product06.png" alt="">
+										<img src="product_images/toyotacayla.jpg" alt="">
 									</div>
 									<div class="product-body">
-										<p class="product-category">Category</p>
-										<h3 class="product-name"><a href="#">product name goes here</a></h3>
-										<h4 class="product-price">980.00</h4>
+										<p class="product-category">Kategori</p>
+										<h3 class="product-name"><a href="#">Toyota Cayla</a></h3>
+										<h4 class="product-price">120000000</h4>
 									</div>
 								</div>
 								<!-- product widget -->
@@ -275,12 +275,12 @@
 								<!-- product widget -->
 								<div class="product-widget">
 									<div class="product-img">
-										<img src="./img/product07.png" alt="">
+										<img src="product_images/suzuki xl7.jpg" alt="">
 									</div>
 									<div class="product-body">
-										<p class="product-category">Category</p>
-										<h3 class="product-name"><a href="#">product name goes here</a></h3>
-										<h4 class="product-price">980.00</h4>
+										<p class="product-category">Kategori</p>
+										<h3 class="product-name"><a href="#">SUZUKI XL7</a></h3>
+										<h4 class="product-price">200000000</h4>
 									</div>
 								</div>
 								<!-- /product widget -->
@@ -288,12 +288,12 @@
 								<!-- product widget -->
 								<div class="product-widget">
 									<div class="product-img">
-										<img src="./img/product08.png" alt="">
+										<img src="product_images/ktm 250 fx.jpg" alt="">
 									</div>
 									<div class="product-body">
-										<p class="product-category">Category</p>
-										<h3 class="product-name"><a href="#">product name goes here</a></h3>
-										<h4 class="product-price">980.00</h4>
+										<p class="product-category">Kategori</p>
+										<h3 class="product-name"><a href="#">KTM 250 FX</a></h3>
+										<h4 class="product-price">100000000</h4>
 									</div>
 								</div>
 								<!-- /product widget -->
@@ -301,12 +301,12 @@
 								<!-- product widget -->
 								<div class="product-widget">
 									<div class="product-img">
-										<img src="./img/product09.png" alt="">
+										<img src="product_images/Exotic 2651.jpg" alt="">
 									</div>
 									<div class="product-body">
-										<p class="product-category">Category</p>
-										<h3 class="product-name"><a href="#">product name goes here</a></h3>
-										<h4 class="product-price">080.00</h4>
+										<p class="product-category">Kategori</p>
+										<h3 class="product-name"><a href="#">Exotic 2651</a></h3>
+										<h4 class="product-price">1000000</h4>
 									</div>
 								</div>
 								<!-- product widget -->
@@ -320,7 +320,7 @@
 
 					<div class="col-md-4 col-xs-6">
 						<div class="section-title">
-							<h4 class="title">Terbaru</h4>
+							<h4 class="title">Produk</h4>
 							<div class="section-nav">
 								<div id="slick-nav-5" class="products-slick-nav"></div>
 							</div>
@@ -331,12 +331,12 @@
 								<!-- product widget -->
 								<div class="product-widget">
 									<div class="product-img">
-										<img src="./img/product01.png" alt="">
+										<img src="product_images/Msi GF63.JPG" alt="">
 									</div>
 									<div class="product-body">
-										<p class="product-category">Category</p>
-										<h3 class="product-name"><a href="#">product name goes here</a></h3>
-										<h4 class="product-price">$980.00</h4>
+										<p class="product-category">Kategori</p>
+										<h3 class="product-name"><a href="#">Msi GF63</a></h3>
+										<h4 class="product-price">10000000</h4>
 									</div>
 								</div>
 								<!-- /product widget -->
@@ -344,12 +344,12 @@
 								<!-- product widget -->
 								<div class="product-widget">
 									<div class="product-img">
-										<img src="./img/product02.png" alt="">
+										<img src="product_images/PS 3.jpg" alt="">
 									</div>
 									<div class="product-body">
-										<p class="product-category">Category</p>
-										<h3 class="product-name"><a href="#">product name goes here</a></h3>
-										<h4 class="product-price">$980.00</h4>
+										<p class="product-category">Kategori</p>
+										<h3 class="product-name"><a href="#">PS 3</a></h3>
+										<h4 class="product-price">1600000</h4>
 									</div>
 								</div>
 								<!-- /product widget -->
@@ -357,12 +357,12 @@
 								<!-- product widget -->
 								<div class="product-widget">
 									<div class="product-img">
-										<img src="./img/product03.png" alt="">
+										<img src="product_images/Samsung Led TV 32 Inch.jpg" alt="">
 									</div>
 									<div class="product-body">
-										<p class="product-category">Category</p>
-										<h3 class="product-name"><a href="#">product name goes here</a></h3>
-										<h4 class="product-price">$980.00</h4>
+										<p class="product-category">Kategori</p>
+										<h3 class="product-name"><a href="#">Samsung LED TV 32 Inch</a></h3>
+										<h4 class="product-price">1400000</h4>
 									</div>
 								</div>
 								<!-- product widget -->
@@ -372,12 +372,12 @@
 								<!-- product widget -->
 								<div class="product-widget">
 									<div class="product-img">
-										<img src="./img/product04.png" alt="">
+										<img src="product_images/Nikon D3100.jpg" alt="">
 									</div>
 									<div class="product-body">
-										<p class="product-category">Category</p>
-										<h3 class="product-name"><a href="#">product name goes here</a></h3>
-										<h4 class="product-price">$980.00</h4>
+										<p class="product-category">Kategori</p>
+										<h3 class="product-name"><a href="#">Nikon D3100</a></h3>
+										<h4 class="product-price">2200000</h4>
 									</div>
 								</div>
 								<!-- /product widget -->
@@ -386,12 +386,12 @@
 								<!-- product widget -->
 								<div class="product-widget">
 									<div class="product-img">
-										<img src="./img/product05.png" alt="">
+										<img src="product_images/Lemari.jpg" alt="">
 									</div>
 									<div class="product-body">
-										<p class="product-category">Category</p>
-										<h3 class="product-name"><a href="#">product name goes here</a></h3>
-										<h4 class="product-price">$980.00</h4>
+										<p class="product-category">Kategori</p>
+										<h3 class="product-name"><a href="#">Lemari</a></h3>
+										<h4 class="product-price">3200000</h4>
 									</div>
 								</div>
 								<!-- /product widget -->
@@ -399,12 +399,12 @@
 								<!-- product widget -->
 								<div class="product-widget">
 									<div class="product-img">
-										<img src="./img/product06.png" alt="">
+										<img src="product_images/Lemari 3 Pintu.jpg" alt="">
 									</div>
 									<div class="product-body">
-										<p class="product-category">Category</p>
-										<h3 class="product-name"><a href="#">product name goes here</a></h3>
-										<h4 class="product-price">Rp.1000000</h4>
+										<p class="product-category">Kategori</p>
+										<h3 class="product-name"><a href="#">Lemari 3 Pintu</a></h3>
+										<h4 class="product-price">1200000</h4>
 									</div>
 								</div>
 								<!-- product widget -->
@@ -414,7 +414,7 @@
 					
 					<div class="col-md-4 col-xs-6">
 						<div class="section-title">
-							<h4 class="title">Terlaris</h4>
+							<h4 class="title">Produk</h4>
 							<div class="section-nav">
 								<div id="slick-nav-4" class="products-slick-nav"></div>
 							</div>
@@ -425,12 +425,12 @@
 								<!-- product widget -->
 								<div class="product-widget">
 									<div class="product-img">
-										<img src="product_images/product04.png" alt="">
+										<img src="product_images/Rak Tv Kayu.jpg" alt="">
 									</div>
 									<div class="product-body">
-										<p class="product-category">Category</p>
-										<h3 class="product-name"><a href="#">product name goes here</a></h3>
-										<h4 class="product-price">$980.00</h4>
+										<p class="product-category">Kategori</p>
+										<h3 class="product-name"><a href="#">Rak TV Kayu</a></h3>
+										<h4 class="product-price">4000000</h4>
 									</div>
 								</div>
 								<!-- /product widget -->
@@ -438,12 +438,12 @@
 								<!-- product widget -->
 								<div class="product-widget">
 									<div class="product-img">
-										<img src="./img/product05.png" alt="">
+										<img src="product_images/Gitar.jpg" alt="">
 									</div>
 									<div class="product-body">
-										<p class="product-category">Category</p>
-										<h3 class="product-name"><a href="#">product name goes here</a></h3>
-										<h4 class="product-price">$980.00</h4>
+										<p class="product-category">Kategori</p>
+										<h3 class="product-name"><a href="#">Gitar</a></h3>
+										<h4 class="product-price">700000</h4>
 									</div>
 								</div>
 								<!-- /product widget -->
@@ -451,12 +451,12 @@
 								<!-- product widget -->
 								<div class="product-widget">
 									<div class="product-img">
-										<img src="./img/product06.png" alt="">
+										<img src="product_images/Biola.jpg" alt="">
 									</div>
 									<div class="product-body">
-										<p class="product-category">Category</p>
-										<h3 class="product-name"><a href="#">product name goes here</a></h3>
-										<h4 class="product-price">$980.00</h4>
+										<p class="product-category">Kategori</p>
+										<h3 class="product-name"><a href="#">Biola</a></h3>
+										<h4 class="product-price">800000</h4>
 									</div>
 								</div>
 								<!-- product widget -->
@@ -466,12 +466,12 @@
 								<!-- product widget -->
 								<div class="product-widget">
 									<div class="product-img">
-										<img src="./img/product07.png" alt="">
+										<img src="product_images/Drum Rolling.jpg" alt="">
 									</div>
 									<div class="product-body">
-										<p class="product-category">Category</p>
-										<h3 class="product-name"><a href="#">product name goes here</a></h3>
-										<h4 class="product-price">$980.00</h4>
+										<p class="product-category">Kategori</p>
+										<h3 class="product-name"><a href="#">Drum Rolling</a></h3>
+										<h4 class="product-price">3500000</h4>
 									</div>
 								</div>
 								<!-- /product widget -->
@@ -479,12 +479,12 @@
 								<!-- product widget -->
 								<div class="product-widget">
 									<div class="product-img">
-										<img src="./img/product08.png" alt="">
+										<img src="product_images/Klarinet.jpg" alt="">
 									</div>
 									<div class="product-body">
-										<p class="product-category">Category</p>
-										<h3 class="product-name"><a href="#">product name goes here</a></h3>
-										<h4 class="product-price">$980.00</h4>
+										<p class="product-category">Kategori</p>
+										<h3 class="product-name"><a href="#">Klarinet</a></h3>
+										<h4 class="product-price">2000000</h4>
 									</div>
 								</div>
 								<!-- /product widget -->
@@ -492,12 +492,12 @@
 								<!-- product widget -->
 								<div class="product-widget">
 									<div class="product-img">
-										<img src="./img/product09.png" alt="">
+										<img src="product_images/Aku.jpg" alt="">
 									</div>
 									<div class="product-body">
-										<p class="product-category">Category</p>
-										<h3 class="product-name"><a href="#">product name goes here</a></h3>
-										<h4 class="product-price">$980.00</h4>
+										<p class="product-category">Kategori</p>
+										<h3 class="product-name"><a href="#">Aku</a></h3>
+										<h4 class="product-price">30000</h4>
 									</div>
 								</div>
 								<!-- product widget -->
