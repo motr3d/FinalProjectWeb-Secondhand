@@ -73,11 +73,8 @@ include "topheader.php";
                       </div>
                     </div>
                   </div>
-                 
-                  
-                
               </div>
-              
+
             </div>
           </div>
           <div class="col-md-5">
@@ -105,7 +102,7 @@ include "topheader.php";
             </div>
           </div>
           
-        </div>
+          </div>
          </form>
           
         </div>
