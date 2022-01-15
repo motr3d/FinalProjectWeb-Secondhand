@@ -15,3 +15,9 @@ Ketika login muncul 2021 berada pada login.php
 
 
 
+Pembahasan Fitur
+- Login
+- Register
+- Pembayaran
+- Checkout/Keranjang
+- 
