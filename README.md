@@ -15,9 +15,16 @@ Ketika login muncul 2021 berada pada login.php
 
 
 
-Pembahasan Fitur
+Pembahasan Fitur Halaman Utama
 - Login
 - Register
 - Pembayaran
 - Checkout/Keranjang
-- 
+
+Pembahasa Fitur Halaman Admin
+- Menampilkan User List dan Categories List di dashboard
+- Add Users Mengisi/Menambahkan data user
+- Product List Menampilkan produk dan mengupdate produk
+- Order menampilakan pesanan dari pengguna
+- Add Product sama halnya dengan produk list menambahkan produk dan mengupdate
+- Manage User menambahkan user/mengedit user
