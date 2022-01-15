@@ -52,7 +52,7 @@ include "topheader.php";
                     <div class="col-md-12">
                       <div class="form-group">
                         <label>Product Title</label>
-                        <input type="text" id="nama_barang" required name="nama_barang" class="form-control">
+                        <input type="text" id="product_name" required name="product_name" class="form-control">
                       </div>
                     </div>
                     <div class="col-md-4">
