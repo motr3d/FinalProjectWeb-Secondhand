@@ -185,8 +185,7 @@ include "header.php";
 						<div id="product-tab">
 							<!-- product tab nav -->
 							<ul class="tab-nav">
-								<li class="active"><a data-toggle="tab" href="#tab1">Deskripsi</a></li>
-								<li><a data-toggle="tab" href="#tab2">Detail</a></li>
+								<li class="active"><a data-toggle="tab" href="#tab1">Detail</a></li>
 							</ul>
 							<!-- /product tab nav -->
 
