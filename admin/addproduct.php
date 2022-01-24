@@ -43,7 +43,7 @@ include "topheader.php";
          <div class="col-md-7">
             <div class="card">
               <div class="card-header card-header-primary">
-                <h5 class="title">Add Product</h5>
+                <h5 class="title">Tambahkan Produk</h5>
               </div>
               <div class="card-body">
                 

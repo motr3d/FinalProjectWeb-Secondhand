@@ -62,7 +62,7 @@ include "topheader.php";
                   <table class="table table-hover tablesorter " id="page1">
                     <thead class=" text-primary">
                       <tr><th>Gambar</th><th>Nama</th><th>Harga</th><th>
-	<a class=" btn btn-primary" href="addproduct.php">Add New</a></th></tr></thead>
+	<a class=" btn btn-primary" href="addproduct.php">Tambahkan Baru</a></th></tr></thead>
                     <tbody>
                       <?php 
 

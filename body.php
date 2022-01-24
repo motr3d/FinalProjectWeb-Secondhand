@@ -3,10 +3,10 @@
         <div class="container mainn-raised" style="width:100%;">
   
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
-    <!-- Indicators -->
+    <!-- Ter indikasi -->
    
 
-    <!-- Wrapper for slides -->
+    <!--  slides -->
     <div class="carousel-inner">
 
       <div class="item active">
@@ -15,33 +15,18 @@
       </div>
 
       <div class="item">
-        <img src="img/secondhand.jpg" style="width:100%;">
+        <img src="img/secondhand4.jpg" style="width:100%;">
         
       </div>
-    
-      <div class="item">
-        <img src="img/secondhand.jpg" alt="2" style="width:100%;">
-        
-      </div>
-      <div class="item">
-        <img src="img/secondhand.jpg" alt="3" style="width:100%;">
-        
-      </div>
-      <div class="item">
-        <img src="img/secondhand.jpg" alt="4" style="width:100%;">
-        
-      </div>
-  
-    </div>
 
-    <!-- Left and right controls -->
+    <!-- Kanan kiri kanan kiri ok :V -->
     <a class="left carousel-control _26sdfg" href="#myCarousel" data-slide="prev">
       <span class="glyphicon glyphicon-chevron-left"></span>
-      <span class="sr-only" >Previous</span>
+      <span class="sr-only" >Sebelumnya</span>
     </a>
     <a class="right carousel-control _26sdfg" href="#myCarousel" data-slide="next">
       <span class="glyphicon glyphicon-chevron-right"></span>
-      <span class="sr-only">Next</span>
+      <span class="sr-only">Lanjut</span>
     </a>
   </div>
 </div>

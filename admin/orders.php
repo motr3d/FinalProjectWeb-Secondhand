@@ -38,7 +38,7 @@ include "topheader.php";
           <div class="col-md-14">
             <div class="card ">
               <div class="card-header card-header-primary">
-                <h4 class="card-title">Orders  / Page <?php echo $page;?> </h4>
+                <h4 class="card-title">Pesanan <?php echo $page;?> </h4>
               </div>
               <div class="card-body">
                 <div class="table-responsive ps">

@@ -28,8 +28,8 @@ mysqli_close($con);
           <div class="col-md-12">
               <div class="card">
                 <div class="card-header card-header-primary">
-                  <h4 class="card-title">Add Users</h4>
-                  <p class="card-category">Complete User profile</p>
+                  <h4 class="card-title">Tambahkan User</h4>
+                  <p class="card-category">Selesai</p>
                 </div>
                 <div class="card-body">
                   <form action="" method="post" name="form" enctype="multipart/form-data">

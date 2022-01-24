@@ -38,29 +38,29 @@
           </li>
           <li class="nav-item ">
             <a class="nav-link" href="adduser.php">
-              <p>Add User</p>
+              <p>Tambah User</p>
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="productlist.php">
-              <p>Product List</p>
+              <p>List Produk</p>
             </a>
             
           </li>
           
           <li class="nav-item ">
             <a class="nav-link" href="orders.php">
-              <p>Orders</p>
+              <p>Pesanan</p>
             </a>
           </li>
           <li class="nav-item ">
             <a class="nav-link" href="addproduct.php">
-              <p>Add Products</p>
+              <p>Tambahkan Produk</p>
             </a>
           </li>
           <li class="nav-item ">
             <a class="nav-link" href="manageuser.php">
-              <p>Manage User</p>
+              <p>Mengatur User</p>
             </a>
           </li>
           <!-- <li class="nav-item active-pro ">
